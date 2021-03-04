@@ -1,0 +1,30 @@
+{
+  "name": "mixcloud-fetch",
+  "version": "0.1.0-a",
+  "description": "JS library for fetching Mixcloud resources",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patrickkfkan/mixcloud-fetch.git"
+  },
+  "keywords": [
+    "mixcloud",
+    "scrape",
+    "scraper",
+    "show",
+    "shows",
+    "stream",
+    "streams"
+  ],
+  "author": "Patrick Kan",
+  "license": "MIT",
+  "dependencies": {
+    "base64-min": "^2.0.0",
+    "bottleneck": "^2.19.5",
+    "node-cache": "^5.1.2",
+    "node-fetch": "^2.6.1"
+  }
+}
