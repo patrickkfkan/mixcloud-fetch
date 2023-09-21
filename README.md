@@ -215,6 +215,11 @@ mcfetch.cache.setMaxEntries(20); // Default: 10
 mcfetch.cache.clear();
 ```
 
+# Changelog
+
+0.1.1:
+- Fix fetch errors due to Mixcloud changing their GraphQL URL.
+
 # License
 
 MIT

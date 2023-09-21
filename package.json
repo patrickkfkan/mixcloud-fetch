@@ -1,6 +1,6 @@
 {
   "name": "mixcloud-fetch",
-  "version": "0.1.0-a",
+  "version": "0.1.1",
   "description": "JS library for fetching Mixcloud resources",
   "main": "lib/index.js",
   "scripts": {
