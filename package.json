@@ -1,14 +1,43 @@
 {
   "name": "mixcloud-fetch",
   "version": "0.1.1",
-  "description": "JS library for fetching Mixcloud resources",
-  "main": "lib/index.js",
+  "description": "Node module for fetching Mixcloud resources",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run prepare",
+    "build:esm": "npx tsc -p tsconfig-esm.json",
+    "build:cjs": "npx tsc -p tsconfig.json",
+    "prepare": "rm -rf dist && npm run build:esm && npm run build:cjs && bash fixup.sh",
+    "lint": "npx eslint ./src && npx eslint ./examples",
+    "lint:fix": "npx eslint ./src --fix && npx eslint ./examples --fix",
+    "doc": "npx typedoc",
+    "example": "func() { npx ts-node ./examples/${1}.ts; }; func"
   },
+  "main": "./dist/cjs/index-cjs.js",
+  "module": "./dist/mjs/index.js",
+  "types": "./dist/mjs/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/mjs/index.d.ts",
+        "default": "./dist/mjs/index.js"
+      },
+      "require": {
+        "types": "./dist/cjs/index.d.ts",
+        "default": "./dist/cjs/index-cjs.js"
+      }
+    }
+  },
+  "author": "Patrick Kan <patrickkfkan@gmail.com> (https://github.com/patrickkfkan)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/patrickkfkan/mixcloud-fetch.git"
+    "url": "https://github.com/patrickkfkan/bandcamp-fetch.git"
+  },
+  "license": "MIT",
+  "directories": {
+    "dist": "./dist"
+  },
+  "engines": {
+    "node": ">=14"
   },
   "keywords": [
     "mixcloud",
@@ -19,12 +48,23 @@
     "stream",
     "streams"
   ],
-  "author": "Patrick Kan",
-  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.18.38",
+    "@types/node-fetch": "^2.6.4",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "eslint": "^8.36.0",
+    "eslint-plugin-tsdoc": "^0.2.17",
+    "ts-node": "^10.9.1",
+    "typedoc": "^0.24.0",
+    "typedoc-plugin-markdown": "^3.14.0",
+    "typedoc-plugin-rename-defaults": "^0.6.4",
+    "typescript": "^4.9.5"
+  },
   "dependencies": {
     "base64-min": "^2.0.0",
     "bottleneck": "^2.19.5",
     "node-cache": "^5.1.2",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.9"
   }
 }

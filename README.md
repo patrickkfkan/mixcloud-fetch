@@ -1,8 +1,8 @@
 # mixcloud-fetch
 
-A JS library for fetching Mixcloud resources.
+Node module for fetching Mixcloud resources.
 
-Note: this library does not support user logins, so you won't be able to fetch exclusive content or access account-specific features.
+Note: `mixcloud-fetch` does not support user login, so you won't be able to fetch exclusive content or access account-specific features.
 
 # Installation
 
@@ -13,32 +13,30 @@ npm i mixcloud-fetch --save
 # Usage
 
 ```
-const mcfetch = require('mixcloud-fetch');
+import mcfetch from 'mixcloud-fetch';
 
-mcfetch.tag(['ambient', 'lounge']).getShows().then( shows => {
-    ...
-});
+// Get shows matching the 'ambient' and 'lounge' tags
+const shows = await mcfetch.tag(['ambient', 'lounge']).getShows();
 
-mcfetch.search('jazz funk').getTags().then( tags => {
-    ...
-});
+// Search for tags matching 'jazz funk'
+const tags = await mcfetch.search('jazz funk').getTags();
 ```
 
-### Tag functions
+Here, `mcfetch` is a `MixcloudFetch` instance that provides access to the underlying APIs.
 
-A tag is used to discover shows and is identified by its **slug**. To access tag-related functions, you need to obtain a `Tag` object with the slug.
+### Tag API
+
+A tag is used to discover shows and is identified by its **slug**. To access the Tag API, call `tag(slug)` of a `MixcloudFetch` instance:
 
 ```
 const slug = 'jazz';
 const tag = mcfetch.tag(slug);
 
 // Fetch shows matching the 'jazz' tag
-tag.getShows().then( shows => {
-    ...
-});
+const shows = await tag.getShows();
 ```
 
-You can encapsulate multiple tags in a `Tag` object by putting their slugs into an array:
+Multiple slugs are supported:
 
 ```
 const slugs = [
@@ -48,130 +46,116 @@ const slugs = [
 const tag = mcfetch.tag(slugs);
 
 // Fetch shows matching both the 'jazz' and 'funk' tags
-tag.getShows().then( shows => {
-    ...
-});
+const shows = await tag.getShows();
 ```
 
-The following functions are provided by a `Tag` object. Each of these functions returns a Promise that resolves to the data requested.
+The following methods are provided by the Tag API. Each method returns a Promise that resolves to the data requested.
 
 | Function              | Resolves To                                 |                                                                                         |
 |-----------------------|-----------------------------------------------|-------------------------------------------------------------------------------------------|
-| getInfo()             | Information about the represented tag(s)      |[Example](examples/tag/getInfo.js) ([output](examples/tag/getInfo_output.txt))             |
-| getShows([params])*   | Cloudcasts matching the represented tag(s)    |[Example](examples/tag/getShows.js) ([output](examples/tag/getShows_output.txt))           |
-| getFeatured([params])*| Featured cloudcasts matching the represented tag(s)|[Example](examples/tag/getFeatured.js) ([output](examples/tag/getFeatured_output.txt))|
+| `getInfo()`             | Info about the target tag(s)             |
+| `getShows([params])`*   | Cloudcasts matching the target tag(s)    |[Example](examples/tag/getShows.js) ([output](examples/tag/getShows_output.txt))           |
+| `getFeatured([params])`*| Featured cloudcasts matching the target tag(s)|[Example](examples/tag/getFeatured.js) ([output](examples/tag/getFeatured_output.txt))|
 
 *`params` specify what to return in the results. Check the example for what params you can specify.
 
-### User functions
+### User API
 
-A user is identified by his or her **username**. To access user-related functions, you need to obtain a `User` object with the username.
+A user is identified by **username**. To access the User API, call `user(username)` of a `MixcloudFetch` instance:
 
 ```
 const username = 'jazzcat';
 const user = mcfetch.user(username);
 
 // Fetch shows uploaded by the user
-user.getShows().then( shows => {
-    ...
-});
+const shows = await user.getShows();
 ```
 
-The following functions are provided by a `User` object. Each of these functions returns a Promise that resolves to the data requested.
+The following methods are provided by the User API. Each method returns a Promise that resolves to the data requested.
 
 | Function              | Resolves To                                 |                                                                                           |
 |-----------------------|-----------------------------------------------|-------------------------------------------------------------------------------------------|
-| getInfo()             | Information about the user                    |[Example](examples/user/getInfo.js) ([output](examples/user/getInfo_output.txt))           |
-| getShows([params])*   | Cloudcasts uploaded by the user               |[Example](examples/user/getShows.js) ([output](examples/user/getShows_output.txt))         |
-| getPlaylists()        | Playlists owned by the user                   |[Example](examples/user/getPlaylists.js) ([output](examples/user/getPlaylists_output.txt)) |
+| `getInfo()`             | Information about the user                    |[Example](examples/user/getInfo.js) ([output](examples/user/getInfo_output.txt))           |
+| `getShows([params])`*   | Cloudcasts uploaded by the user               |[Example](examples/user/getShows.js) ([output](examples/user/getShows_output.txt))         |
+| `getPlaylists()`        | Playlists owned by the user                   |[Example](examples/user/getPlaylists.js) ([output](examples/user/getPlaylists_output.txt)) |
 
 *`params` specify what to return in the results. Check the example for what params you can specify.
 
-### Playlist functions
+### Playlist API
 
-A playlist is identified by its ID. To access playlist-related functions, you need to obtain a `Playlist` object with the playlist's ID.
+A playlist is identified by its ID. To access the Playlist API, call `playlist(playlistID)` of a `MixcloudFetch` instance:
 
 ```
 const playlistId = 'UGxheWxpc3Q6MTM5NDM2MA==';
 const playlist = mcfetch.playlist(playlistId);
 
 // Fetch shows in the playlist
-playlist.getShows().then( shows => {
-    ...
-});
+const shows = await playlist.getShows();
 ```
 
-The following functions are provided by a `Playlist` object. Each of these functions returns a Promise that resolves to the data requested.
+The following methods are provided by the Playlist API. Each method returns a Promise that resolves to the data requested.
 
 | Function              | Resolves To                                 |                                                                                           |
 |-----------------------|-----------------------------------------------|-------------------------------------------------------------------------------------------|
-| getInfo()             | Information about the playlist                |[Example](examples/playlist/getInfo.js) ([output](examples/playlist/getInfo_output.txt))   |
-| getShows([params])*   | Cloudcasts in the playlist                    |[Example](examples/playlist/getShows.js) ([output](examples/playlist/getShows_output.txt)) |
+| `getInfo()`             | Information about the playlist                |[Example](examples/playlist/getInfo.js) ([output](examples/playlist/getInfo_output.txt))   |
+| `getShows([params])`*   | Cloudcasts in the playlist                    |[Example](examples/playlist/getShows.js) ([output](examples/playlist/getShows_output.txt)) |
 
 *`params` specify what to return in the results. Check the example for what params you can specify.
 
-### Cloudcast functions
+### Cloudcast API
 
-A cloudcast is identified by its ID. To access cloudcast-related functions, you need to obtain a `Cloudcast` object with the cloudcast's ID.
+A Cloudcast is identified by its ID. To access the Cloudcast API, call `cloudcast(cloudcastID)` of a `MixcloudFetch` instance:
 
 ```
 const cloudcastId = 'Q2xvdWRjYXN0OjE1MDg0MzQzNA==';
 const cloudcast = mcfetch.cloudcast(cloudcastId);
 
-// Fetch info about the cloudcast
-cloudcast.getInfo().then( info => {
-    ...
-});
+// Fetch info about the Cloudcast
+const info = await cloudcast.getInfo();
 ```
 
-There is only one function provided by a `Cloudcast` object:
+There is only one method provided by the Cloudcast API:
 
 | Function              | Resolves To                                 |                                                                                           |
 |-----------------------|-----------------------------------------------|-------------------------------------------------------------------------------------------|
-| getInfo()             | Information about the cloudcast               |[Example](examples/cloudcast/getInfo.js) ([output](examples/cloudcast/getInfo_output.txt)) |
+| `getInfo()`             | Information about the Cloudcast               |[Example](examples/cloudcast/getInfo.js) ([output](examples/cloudcast/getInfo_output.txt)) |
 
-### Search functions
+### Search API
 
-The library supports searching Tags, Shows and Users. To access the search functions, you need to obtain a `Search` object with the keywords to search for.
+`mixcloud-fetch` supports searching Tags, Shows and Users. To access the Search API, call `search(keywords)` of a `MixcloudFetch` instance, where `keywords` indicates the search terms:
 
 ```
 const keywords = 'ambient lounge';
 const search = mcfetch.search(keywords);
 
 // Fetch shows matching 'ambient lounge':
-search.getShows().then( shows => {
-    ...
-});
+const shows = await search.getShows();
 ```
 
-The following functions are provided by a `Search` object. Each of these functions returns a Promise that resolves to the data requested.
+The following methods are provided by the Search API. Each method returns a Promise that resolves to the data requested.
 
 | Function              | Resolves To                                 |                                                                                           |
 |-----------------------|-----------------------------------------------|-------------------------------------------------------------------------------------------|
-| getTags([params])     | Tags matching the given keywords              |[Example](examples/search/getTags.js) ([output](examples/search/getTags_output.txt))       |
-| getShows([params])    | Cloudcasts matching the given keywords        |[Example](examples/search/getShows.js) ([output](examples/search/getShows_output.txt))     |
-| getUsers([params])    | Users matching the given keywords             |[Example](examples/search/getUsers.js) ([output](examples/search/getUsers_output.txt))     |
+| `getTags([params])`     | Tags matching the given keywords              |[Example](examples/search/getTags.js) ([output](examples/search/getTags_output.txt))       |
+| `getShows([params])`    | Cloudcasts matching the given keywords        |[Example](examples/search/getShows.js) ([output](examples/search/getShows_output.txt))     |
+| `getUsers([params])`    | Users matching the given keywords             |[Example](examples/search/getUsers.js) ([output](examples/search/getUsers_output.txt))     |
 
 `params` specify what to return in the results. Check the example for what params you can specify.
 
-### Miscellaneous functions
+### Miscellaneous
 
 ```
 // Get Mixcloud categories
-mcfetch.misc.getCategories().then( categories => {
-    ...
-});
+const categories = await mcfetch.misc.getCategories();
 
 // Get the list of available countries as well as the default
-mcfetch.misc.getCountries().then( countries => {
-    ...
-});
+const countries = await mcfetch.misc.getCountries();
 ```
 
 | Function              | Resolves To                                 |                                                                                           |
 |-----------------------|-----------------------------------------------|-------------------------------------------------------------------------------------------|
-| getCategories()       | Mixcloud categories                           |[Example](examples/misc/getCategories.js) ([output](examples/misc/getCategories_output.txt)) |
-| getCountries()        | Available countries and the default           |[Example](examples/misc/getCountries.js) ([output](examples/misc/getCountries_output.txt)) |
+| `getCategories()`       | Mixcloud categories                           |[Example](examples/misc/getCategories.js) ([output](examples/misc/getCategories_output.txt)) |
+| `getCountries()`        | Available countries and the default           |[Example](examples/misc/getCountries.js) ([output](examples/misc/getCountries_output.txt)) |
 
 # Rate Limiting
 
