@@ -1,0 +1,19 @@
+{
+  "include": ["src/**/*.ts"],
+  "exclude": ["src/types/**"],
+  "compilerOptions": {
+    "target": "es2020",
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "inlineSources": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "typeRoots": [
+      "src/types",
+      "node_modules/@types"
+    ]
+  }
+}
