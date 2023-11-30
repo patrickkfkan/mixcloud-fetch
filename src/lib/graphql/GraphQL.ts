@@ -3,6 +3,7 @@ import { PlaylistGraphQL, PlaylistQueryVariablesOf } from './Playlist.js';
 import { TagGraphQL, TagQueryVariablesOf } from './Tag.js';
 import { UserGraphQL, UserQueryVariablesOf } from './User.js';
 import { MiscGraphQL, MiscQueryVariablesOf } from './Misc.js';
+import { LiveStreamGraphQL, LiveStreamQueryVariablesOf } from './LiveStream.js';
 
 export interface GraphQLQueryDiscoverTagsVariable {
   slug: string;
@@ -22,11 +23,12 @@ export const GRAPHQL_QUERY_VARIABLES = {
 };
 
 const GRAPHQL_QUERIES = {
-  Misc: { ...MiscGraphQL.getQueries() },
-  Cloudcast: { ...CloudcastGraphQL.getQueries() },
-  Playlist: { ...PlaylistGraphQL.getQueries() },
-  Tag: { ...TagGraphQL.getQueries() },
-  User: { ...UserGraphQL.getQueries() }
+  Misc: MiscGraphQL.getQueries(),
+  Cloudcast: CloudcastGraphQL.getQueries(),
+  Playlist: PlaylistGraphQL.getQueries(),
+  Tag: TagGraphQL.getQueries(),
+  User: UserGraphQL.getQueries(),
+  LiveStream: LiveStreamGraphQL.getQueries()
 } as const;
 
 export type GraphQLCategory = keyof typeof GRAPHQL_QUERIES;
@@ -42,6 +44,8 @@ export type GraphQLQueryVariablesOf<T extends GraphQLCategory, K> =
     K extends GraphQLQueryNameOf<T> ? TagQueryVariablesOf<K> : never :
   T extends 'User' ?
     K extends GraphQLQueryNameOf<T> ? UserQueryVariablesOf<K> : never :
+  T extends 'LiveStream' ?
+    K extends GraphQLQueryNameOf<T> ? LiveStreamQueryVariablesOf<K> : never :
   never;
 
 export default class GraphQL {

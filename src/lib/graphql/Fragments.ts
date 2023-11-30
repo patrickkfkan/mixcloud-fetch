@@ -80,3 +80,30 @@ export const CLOUDCAST_FIELDS = `
 
   ${USER_FIELDS}
 `;
+
+export const LIVE_STREAM_FIELDS = `
+  fragment LiveStreamFields on LiveStream {
+    id
+    name
+    description
+    streamStatus
+    owner {
+      ...UserFields
+    }
+    plays
+    currentSpectators
+    isUnlisted
+    secondaryTags {
+      name
+      id
+    }
+    startedAt
+    scheduledStart
+    scheduledEnd
+    thumbnailUrl
+    hlsUrl
+    __typename
+  }
+
+  ${USER_FIELDS}
+`;

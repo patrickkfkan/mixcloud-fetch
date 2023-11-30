@@ -8,6 +8,7 @@ import Cache from './utils/Cache.js';
 import Fetcher from './utils/Fetcher.js';
 import Limiter from './utils/Limiter.js';
 import MiscAPI from './api/MiscAPI.js';
+import LiveStreamAPI from './api/LiveStreamAPI.js';
 
 const DEFAULT_CACHE_TTL = 300;
 const DEFAULT_CACHE_MAX_ENTRIES = 10;
@@ -18,6 +19,7 @@ export default class MixcloudFetch {
   #fetcher: Fetcher;
   #limiter: Limiter;
   #miscAPI: MiscAPI;
+  #liveStreamAPI: LiveStreamAPI;
 
   constructor() {
     this.#cache = new Cache(DEFAULT_CACHE_TTL, DEFAULT_CACHE_MAX_ENTRIES);
@@ -27,6 +29,7 @@ export default class MixcloudFetch {
       limiter: this.#limiter
     });
     this.#miscAPI = new MiscAPI(this.#fetcher);
+    this.#liveStreamAPI = new LiveStreamAPI(this.#fetcher);
   }
 
   cloudcast(cloudcastID: string) {
@@ -51,6 +54,10 @@ export default class MixcloudFetch {
 
   get misc() {
     return this.#miscAPI;
+  }
+
+  get liveStream() {
+    return this.#liveStreamAPI;
   }
 
   get cache(): ICache {

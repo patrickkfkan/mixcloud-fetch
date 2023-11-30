@@ -6,6 +6,7 @@ import { Playlist } from '../entities/Playlist.js';
 import { Tag } from '../entities/Tag.js';
 import { User } from '../entities/User.js';
 import ObjectHelper from '../utils/ObjectHelper.js';
+import { LiveStream, LiveStreamSecondaryTag } from '../entities/LiveStream.js';
 
 // https://github.com/ytdl-org/youtube-dl/blob/master/youtube_dl/extractor/mixcloud.py
 const DECRYPTION_KEY = 'IFYOUWANTTHEARTISTSTOGETPAIDDONOTDOWNLOADFROMMIXCLOUD';
@@ -26,12 +27,13 @@ const GENERAL_IMAGE_URLS: ImageVariants = {
 
 const COVER_IMAGE_URL = 'https://thumbnailer.mixcloud.com/unsafe/1460x370/';
 
-type ItemListFilterType = (Cloudcast | User | Tag | Playlist)['type'];
+type ItemListFilterType = (Cloudcast | User | Tag | Playlist | LiveStream )['type'];
 type ItemListItemOf<T extends ItemListFilterType> =
   T extends 'cloudcast' ? Cloudcast :
   T extends 'user' ? User :
   T extends 'tag' ? Tag :
   T extends 'playlist' ? Playlist :
+  T extends 'liveStream' ? LiveStream :
   never;
 type ItemListOf<T extends ItemListFilterType[]> = ItemList<ItemListItemOf<T[number]>>;
 
@@ -73,7 +75,7 @@ export default abstract class BaseParser {
       };
     }
 
-    const _filterTypes = filterTypes || [ 'cloudcast', 'tag', 'user', 'playlist' ] as T;
+    const _filterTypes = filterTypes || [ 'cloudcast', 'tag', 'user', 'playlist', 'liveStream' ] as T;
 
     const dataEdges = data.edges;
     const nodes = dataEdges.reduce<any[]>((result, edge) => {
@@ -95,6 +97,9 @@ export default abstract class BaseParser {
           break;
         case 'Tag':
           parsedItem = this.parseTagData(node);
+          break;
+        case 'LiveStream':
+          parsedItem = this.parseLiveStreamData(node);
           break;
         default:
           if (ObjectHelper.getProperty(node, 'cloudcast.__typename') === 'Cloudcast') {
@@ -127,7 +132,7 @@ export default abstract class BaseParser {
     return list;
   }
 
-  protected static itemMatchesListFilterType<T extends ItemListFilterType[]>(item: Cloudcast | User | Tag | Playlist, filterTypes: T): item is ItemListItemOf<T[number]> {
+  protected static itemMatchesListFilterType<T extends ItemListFilterType[]>(item: Cloudcast | User | Tag | Playlist | LiveStream, filterTypes: T): item is ItemListItemOf<T[number]> {
     return filterTypes.includes(item.type);
   }
 
@@ -259,7 +264,55 @@ export default abstract class BaseParser {
     }
 
     return null;
+  }
 
+  protected static parseLiveStreamData(data: any): LiveStream | null {
+    if (!ObjectHelper.hasProperty(data, 'id', 'name')) {
+      return null;
+    }
+
+    let secondaryTags: LiveStreamSecondaryTag[] | undefined;
+    if (ObjectHelper.hasProperty(data, 'secondaryTags') && Array.isArray(data.secondaryTags)) {
+      secondaryTags = data.secondaryTags.reduce<LiveStreamSecondaryTag[]>((result, tag) => {
+        if (ObjectHelper.hasProperty(tag, 'id', 'name')) {
+          result.push({
+            id: tag.id,
+            name: tag.name
+          });
+        }
+        return result;
+      }, []);
+    }
+
+    let images: ImageVariants | undefined;
+    if (ObjectHelper.hasProperty(data, 'thumbnailUrl')) {
+      images = this.parsePicture({ urlRoot: data.thumbnailUrl }) || undefined;
+    }
+
+    let streams: LiveStream['streams'];
+    if (ObjectHelper.hasProperty(data, 'hlsUrl')) {
+      streams = { hls: data.hlsUrl };
+    }
+
+    const liveStream: LiveStream = {
+      type: 'liveStream',
+      id: data.id,
+      name: data.name,
+      description: data.description,
+      status: data.streamStatus,
+      owner: this.parseUserData(data.owner) || undefined,
+      plays: data.plays,
+      currentSpectators: data.currentSpectators,
+      isUnlisted: ObjectHelper.hasProperty(data, 'isUnlisted') ? data.isUnlisted : undefined,
+      secondaryTags,
+      startedAt: data.startedAt,
+      scheduledStart: data.scheduledStart,
+      scheduledEnd: data.scheduledEnd,
+      images,
+      streams
+    };
+
+    return ObjectHelper.clean(liveStream);
   }
 
   protected static parsePicture(data: any): ImageVariants | null {

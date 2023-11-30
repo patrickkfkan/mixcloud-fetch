@@ -16,6 +16,8 @@ export interface UserAPIGetShowsParams extends APIPaginationParams {
   orderBy?: 'trending' | 'popular' | 'latest' | 'oldest';
 }
 
+export type UserAPIGetLiveStreamParams = null;
+
 export default class UserAPI extends BaseAPI {
 
   #username: string;
@@ -62,6 +64,14 @@ export default class UserAPI extends BaseAPI {
       ...UserParser.parseUserUploads(data),
       params: sanitizedParams
     };
+  }
+
+  async getLiveStream() {
+    const data = await this.fetcher.fetchGraphQL('LiveStream', 'UserLiveStreamQuery', {
+      lookup: { username: this.#username }
+    });
+
+    return UserParser.parseLiveStream(data);
   }
 
 }

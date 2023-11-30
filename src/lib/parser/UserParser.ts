@@ -33,4 +33,13 @@ export default class UserParser extends BaseParser {
     this.throwNoEntryPointError('user uploads');
   }
 
+  static parseLiveStream(data: any) {
+    const livestream = ObjectHelper.getProperty(data, 'data.user.liveStream');
+    if (livestream) {
+      return this.parseLiveStreamData(livestream);
+    }
+
+    return null;
+  }
+
 }
