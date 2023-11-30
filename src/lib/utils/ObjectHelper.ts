@@ -28,7 +28,7 @@ export default class ObjectHelper {
   }
 
   static hasProperty<T extends string[]>(obj: any, ...prop: T): obj is Record<string, any> & { [K in T[number]]: any; } {
-    if (typeof obj !== 'object') {
+    if (!obj || typeof obj !== 'object') {
       return false;
     }
     for (const p of prop) {
