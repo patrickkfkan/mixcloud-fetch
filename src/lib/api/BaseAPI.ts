@@ -7,8 +7,9 @@ export interface APIPaginationParams {
   pageToken?: string | null;
 }
 
-const MAX_COUNT = GRAPHQL_QUERY_VARIABLES.MAX_COUNT;
-const DEFAULT_COUNT = GRAPHQL_QUERY_VARIABLES.DEFAULT_COUNT;
+export const API_PARAMS_MAX_LIMIT = GRAPHQL_QUERY_VARIABLES.MAX_COUNT;
+export const API_PARAMS_DEFAULT_LIMIT = GRAPHQL_QUERY_VARIABLES.DEFAULT_COUNT;
+export const API_PARAMS_GLOBAL_COUNTRY = GRAPHQL_QUERY_VARIABLES.GLOBAL_COUNTRY;
 
 export default abstract class BaseAPI {
 
@@ -33,7 +34,8 @@ export default abstract class BaseAPI {
    */
   protected sanitizePaginationParams(params?: APIPaginationParams) {
     return ObjectHelper.clean({
-      limit: params?.limit !== undefined ? Math.min(params.limit, MAX_COUNT) : DEFAULT_COUNT,
+      limit: params?.limit !== undefined ?
+        Math.min(params.limit, API_PARAMS_MAX_LIMIT) : API_PARAMS_DEFAULT_LIMIT,
       pageToken: params?.pageToken || undefined
     });
   }
