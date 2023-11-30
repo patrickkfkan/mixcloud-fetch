@@ -6,34 +6,44 @@ import BaseParser from './BaseParser.js';
 
 export default class PlaylistParser extends BaseParser {
 
-  static parsePlaylists(data: any): ItemList<Playlist> {
+  static parsePlaylists(data: any): ItemList<Playlist> | null {
     const playlistsByUser = ObjectHelper.getProperty(data, 'data.playlistsByUser');
-    if (playlistsByUser) {
-      return this.parsePlaylistsByUser(playlistsByUser);
+    if (playlistsByUser === undefined) {
+      this.throwNoEntryPointError('playlists');
     }
-
-    this.throwNoEntryPointError('playlists');
+    if (playlistsByUser === null) {
+      // User does not exist
+      return null;
+    }
+    return this.#parsePlaylistsByUser(playlistsByUser);
   }
 
   static parsePlaylist(data: any): Playlist | null {
     const playlist = ObjectHelper.getProperty(data, 'data.playlist');
-    if (playlist) {
-      return this.parsePlaylistData(playlist);
+    if (playlist === undefined) {
+      this.throwNoEntryPointError('playlist');
     }
-
-    this.throwNoEntryPointError('playlist');
+    if (playlist === null) {
+      // Playlist does not exist
+      return null;
+    }
+    return this.parsePlaylistData(playlist);
   }
 
-  static parsePlaylistItems(data: any): ItemList<Cloudcast> {
-    const playlistItems = ObjectHelper.getProperty(data, 'data.playlistItems.items');
-    if (playlistItems) {
-      return this.parseList(playlistItems, [ 'cloudcast' ]);
+  static parsePlaylistItems(data: any): ItemList<Cloudcast> | null {
+    const playlistItems = ObjectHelper.getProperty(data, 'data.playlistItems');
+    if (playlistItems === undefined) {
+      this.throwNoEntryPointError('playlist items');
     }
-
-    this.throwNoEntryPointError('playlist items');
+    if (playlistItems === null) {
+      // Playlist does not exist
+      return null;
+    }
+    const items = ObjectHelper.getProperty(playlistItems, 'items');
+    return this.parseList(items, [ 'cloudcast' ]);
   }
 
-  protected static parsePlaylistsByUser(graph: any): ItemList<Playlist> {
+  static #parsePlaylistsByUser(graph: any): ItemList<Playlist> {
     const userURL = ObjectHelper.getProperty(graph, 'url');
     const profileNavItems = ObjectHelper.getProperty(graph, 'profileNavigation.menuItems');
 

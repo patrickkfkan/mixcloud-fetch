@@ -5,13 +5,17 @@ import BaseParser from './BaseParser.js';
 
 export default class TagParser extends BaseParser {
 
-  static parseTags(data: any): Tag[] {
-    const tags = ObjectHelper.getProperty(data, 'data.viewer.tags.selectedTags');
-    if (tags) {
-      return this.parseDiscoverTagsData(tags);
+  static parseTags(data: any): Tag[] | null {
+    const tags = ObjectHelper.getProperty(data, 'data.viewer.tags');
+    if (tags === undefined) {
+      this.throwNoEntryPointError('tags');
     }
-
-    this.throwNoEntryPointError('tags');
+    if (tags === null) {
+      // Tags do not exist
+      return null;
+    }
+    const selectedTags = ObjectHelper.getProperty(data, 'data.viewer.tags.selectedTags');
+    return this.parseDiscoverTagsData(selectedTags);
   }
 
   static parseTagSearchResults(data: any): ItemList<Tag> {

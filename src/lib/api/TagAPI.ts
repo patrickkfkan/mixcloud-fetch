@@ -69,8 +69,13 @@ export default class TagAPI extends BaseAPI {
       country: sanitizedParams.country
     });
 
+    const itemList = CloudcastParser.parseCloudcastsByTag(data);
+    if (itemList === null) {
+      return null;
+    }
+
     return {
-      ...CloudcastParser.parseCloudcastsByTag(data),
+      ...itemList,
       params: sanitizedParams
     };
   }
@@ -88,8 +93,13 @@ export default class TagAPI extends BaseAPI {
       orderBy: this.mapToGraphQLVariable(sanitizedParams.orderBy, FEATURED_ORDER_GRAPHQL_MAP)
     });
 
+    const itemList = CloudcastParser.parseCloudcastsByTag(data);
+    if (itemList === null) {
+      return null;
+    }
+
     return {
-      ...CloudcastParser.parseCloudcastsByTag(data),
+      ...itemList,
       params: sanitizedParams
     };
   }

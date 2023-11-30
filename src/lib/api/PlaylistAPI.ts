@@ -20,19 +20,32 @@ export default class PlaylistAPI extends BaseAPI {
   }
 
   async getInfo() {
-    const data = await this.fetcher.fetchGraphQL('Playlist', 'PlaylistQuery', {
-      playlistID: this.#playlistID
-    });
+    let data;
+    try {
+      data = await this.fetcher.fetchGraphQL('Playlist', 'PlaylistQuery', {
+        playlistID: this.#playlistID
+      });
+    }
+    catch (error) {
+      return this.handleFetchByIDError(error, PlaylistParser.parsePlaylist);
+    }
+
     return PlaylistParser.parsePlaylist(data);
   }
 
   async getShows(params?: PlaylistAPIGetShowsParams) {
-    const page = this.sanitizePaginationParams(params);
-    const data = await this.fetcher.fetchGraphQL('Playlist', 'PlaylistItemsQuery', {
-      playlistID: this.#playlistID,
-      count: page.limit,
-      cursor: page.pageToken
-    });
+    let data;
+    try {
+      const page = this.sanitizePaginationParams(params);
+      data = await this.fetcher.fetchGraphQL('Playlist', 'PlaylistItemsQuery', {
+        playlistID: this.#playlistID,
+        count: page.limit,
+        cursor: page.pageToken
+      });
+    }
+    catch (error) {
+      return this.handleFetchByIDError(error, PlaylistParser.parsePlaylistItems)
+    }
     return PlaylistParser.parsePlaylistItems(data);
   }
 }

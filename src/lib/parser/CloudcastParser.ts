@@ -8,12 +8,20 @@ export default class CloudcastParser extends BaseParser {
 
   static parseCloudcastsByTag(data: any) {
     const cloudcastsByTag = ObjectHelper.getProperty(data, 'data.viewer.cloudcastsByTag');
-    if (cloudcastsByTag) {
+    if (cloudcastsByTag === null) {
+      // Tag does not exist
+      return null;
+    }
+    if (cloudcastsByTag !== undefined) {
       return this.#parseCloudcastsByTag(cloudcastsByTag);
     }
 
     const featuredCloudcastsByTag = ObjectHelper.getProperty(data, 'data.viewer.featuredCloudcastsByTag');
-    if (featuredCloudcastsByTag) {
+    if (featuredCloudcastsByTag === null) {
+      // Tag does not exist
+      return null;
+    }
+    if (featuredCloudcastsByTag !== undefined) {
       return this.#parseCloudcastsByTag(featuredCloudcastsByTag);
     }
 
@@ -31,11 +39,14 @@ export default class CloudcastParser extends BaseParser {
 
   static parseCloudcast(data: any): Cloudcast | null {
     const cloudcast = ObjectHelper.getProperty(data, 'data.cloudcast');
-    if (cloudcast) {
-      return this.parseCloudcastData(cloudcast);
+    if (cloudcast === undefined) {
+      this.throwNoEntryPointError('Cloudcast');
     }
-
-    this.throwNoEntryPointError('Cloudcast');
+    if (cloudcast === null) {
+      // Cloudcast does not exist
+      return null;
+    }
+    return this.parseCloudcastData(cloudcast);
   }
 
   static #parseCloudcastsByTag(graph: any): ItemList<Cloudcast> & { selectedTags: Tag[]; } {

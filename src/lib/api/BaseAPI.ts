@@ -1,5 +1,5 @@
 import { GRAPHQL_QUERY_VARIABLES } from '../graphql/GraphQL.js';
-import Fetcher from '../utils/Fetcher.js';
+import Fetcher, { FetcherGraphQLResultError } from '../utils/Fetcher.js';
 import ObjectHelper from '../utils/ObjectHelper.js';
 
 export interface APIPaginationParams {
@@ -61,6 +61,34 @@ export default abstract class BaseAPI {
    */
   protected mapToGraphQLVariable<T extends string | number | symbol, K>(value: T, map: Record<T, K>) {
     return map[value];
+  }
+
+  /**
+   * @internal
+   * 
+   * @param error 
+   * @param tryParseFn 
+   * @returns 
+   */
+  protected handleFetchByIDError<T>(error: any, tryParseFn: (data: any) => T | null) {
+    if (error instanceof FetcherGraphQLResultError) {
+      try {
+        /**
+         * error.json should contain the the GraphQL result even
+         * if ID was invalid. Confirm if we can parse it and get a
+         * `null` result.
+         */
+        const tryParse = tryParseFn(error.json);
+        if (tryParse === null) {
+          // `error` thrown because ID was invalid, i.e. item does not exist.
+          return null;
+        }
+      }
+      catch (tryParseError) {
+        throw error;
+      }
+    }
+    throw error;
   }
 
 }

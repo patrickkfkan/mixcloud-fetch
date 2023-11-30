@@ -18,9 +18,15 @@ export default class CloudcastAPI extends BaseAPI {
   }
 
   async getInfo() {
-    const data = await this.fetcher.fetchGraphQL('Cloudcast', 'CloudcastQuery', {
-      cloudcastId: this.#cloudcastID
-    });
+    let data;
+    try {
+      data = await this.fetcher.fetchGraphQL('Cloudcast', 'CloudcastQuery', {
+        cloudcastId: this.#cloudcastID
+      });
+    }
+    catch (error) {
+      return this.handleFetchByIDError(error, CloudcastParser.parseCloudcast);
+    }
 
     return CloudcastParser.parseCloudcast(data);
   }

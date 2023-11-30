@@ -17,20 +17,27 @@ export default class UserParser extends BaseParser {
 
   static parseUser(data: any): User | null {
     const user = ObjectHelper.getProperty(data, 'data.user');
-    if (user) {
-      return this.parseUserData(user);
+    if (user === undefined) {
+      this.throwNoEntryPointError('user');
     }
-
-    this.throwNoEntryPointError('user');
+    if (user === null) {
+      // User does not exist
+      return null;
+    }
+    return this.parseUserData(user);
   }
 
-  static parseUserUploads(data: any): ItemList<Cloudcast> {
-    const uploadsByUser = ObjectHelper.getProperty(data, 'data.uploadsByUser.items');
-    if (uploadsByUser) {
-      return this.parseList(uploadsByUser, [ 'cloudcast' ]);
+  static parseUserUploads(data: any): ItemList<Cloudcast> | null {
+    const uploadsByUser = ObjectHelper.getProperty(data, 'data.uploadsByUser');
+    if (uploadsByUser === undefined) {
+      this.throwNoEntryPointError('user uploads');
     }
-
-    this.throwNoEntryPointError('user uploads');
+    if (uploadsByUser === null) {
+      // User does not exist
+      return null;
+    }
+    const items = ObjectHelper.getProperty(uploadsByUser, 'items');
+    return this.parseList(items, [ 'cloudcast' ]);
   }
 
   static parseLiveStream(data: any) {

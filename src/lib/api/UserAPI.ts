@@ -60,8 +60,13 @@ export default class UserAPI extends BaseAPI {
       orderBy: this.mapToGraphQLVariable(sanitizedParams.orderBy, SHOW_ORDER_GRAPHQL_MAP)
     });
 
+    const itemList = UserParser.parseUserUploads(data);
+    if (itemList === null) {
+      return null;
+    }
+
     return {
-      ...UserParser.parseUserUploads(data),
+      ...itemList,
       params: sanitizedParams
     };
   }

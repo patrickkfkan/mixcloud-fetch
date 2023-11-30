@@ -43,7 +43,7 @@ export default class Fetcher {
         return response.json();
       });
 
-      if (json.errors) {
+      if (json.errors && Array.isArray(json.errors)) {
         const e = json.errors[0];
         if (typeof e === 'object') {
           const ePath = Array.isArray(e.path) ? e.path.join('.') : '';
@@ -56,10 +56,10 @@ export default class Fetcher {
             parts.push(eMessage);
           }
           if (parts.length > 0) {
-            throw Error(parts.join(': '));
+            throw new FetcherGraphQLResultError(parts.join(': '), json);
           }
         }
-        throw Error(e);
+        throw new FetcherGraphQLResultError('GraphQL error', json);
       }
 
       return json;
@@ -69,4 +69,15 @@ export default class Fetcher {
 
 function getCacheKeyForGraphQLRequest(payload: Record<string, any>): string {
   return `${GRAPHQL_URL}:graphql:${JSON.stringify(payload)}`;
+}
+
+export class FetcherGraphQLResultError extends Error {
+
+  json: any;
+
+  constructor(message: string, json: any) {
+    super(message);
+    this.name = 'FetcherGraphQLResultError';
+    this.json = json;
+  }
 }
