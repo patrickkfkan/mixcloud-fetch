@@ -26,4 +26,4 @@
 
 #### Defined in
 
-[lib/api/CloudcastAPI.ts:20](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/api/CloudcastAPI.ts#L20)
+[lib/api/CloudcastAPI.ts:20](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/api/CloudcastAPI.ts#L20)

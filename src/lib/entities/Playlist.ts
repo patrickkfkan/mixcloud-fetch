@@ -3,7 +3,7 @@ import { User } from './User.js';
 export interface Playlist {
   type: 'playlist';
   id: string;
-  name: null;
+  name: string;
   slug?: string;
   url?: string;
   description?: string;

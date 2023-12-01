@@ -23,7 +23,7 @@
 
 #### Defined in
 
-[lib/entities/Playlist.ts:9](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/entities/Playlist.ts#L9)
+[lib/entities/Playlist.ts:9](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/Playlist.ts#L9)
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 #### Defined in
 
-[lib/entities/Playlist.ts:5](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/entities/Playlist.ts#L5)
+[lib/entities/Playlist.ts:5](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/Playlist.ts#L5)
 
 ___
 
@@ -43,17 +43,17 @@ ___
 
 #### Defined in
 
-[lib/entities/Playlist.ts:11](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/entities/Playlist.ts#L11)
+[lib/entities/Playlist.ts:11](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/Playlist.ts#L11)
 
 ___
 
 ### name
 
-• **name**: ``null``
+• **name**: `string`
 
 #### Defined in
 
-[lib/entities/Playlist.ts:6](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/entities/Playlist.ts#L6)
+[lib/entities/Playlist.ts:6](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/Playlist.ts#L6)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[lib/entities/Playlist.ts:10](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/entities/Playlist.ts#L10)
+[lib/entities/Playlist.ts:10](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/Playlist.ts#L10)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[lib/entities/Playlist.ts:7](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/entities/Playlist.ts#L7)
+[lib/entities/Playlist.ts:7](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/Playlist.ts#L7)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[lib/entities/Playlist.ts:4](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/entities/Playlist.ts#L4)
+[lib/entities/Playlist.ts:4](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/Playlist.ts#L4)
 
 ___
 
@@ -93,4 +93,4 @@ ___
 
 #### Defined in
 
-[lib/entities/Playlist.ts:8](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/entities/Playlist.ts#L8)
+[lib/entities/Playlist.ts:8](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/Playlist.ts#L8)

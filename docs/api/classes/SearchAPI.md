@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[lib/api/SearchAPI.ts:66](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/api/SearchAPI.ts#L66)
+[lib/api/SearchAPI.ts:66](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/api/SearchAPI.ts#L66)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[lib/api/SearchAPI.ts:53](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/api/SearchAPI.ts#L53)
+[lib/api/SearchAPI.ts:53](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/api/SearchAPI.ts#L53)
 
 ___
 
@@ -74,4 +74,4 @@ ___
 
 #### Defined in
 
-[lib/api/SearchAPI.ts:87](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/api/SearchAPI.ts#L87)
+[lib/api/SearchAPI.ts:87](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/api/SearchAPI.ts#L87)

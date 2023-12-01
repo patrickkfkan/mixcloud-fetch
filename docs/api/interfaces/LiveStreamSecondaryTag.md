@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[lib/entities/LiveStream.ts:25](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/entities/LiveStream.ts#L25)
+[lib/entities/LiveStream.ts:25](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/LiveStream.ts#L25)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[lib/entities/LiveStream.ts:26](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/entities/LiveStream.ts#L26)
+[lib/entities/LiveStream.ts:26](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/LiveStream.ts#L26)

@@ -25,7 +25,7 @@
 
 #### Defined in
 
-[lib/api/TagAPI.ts:26](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/api/TagAPI.ts#L26)
+[lib/api/TagAPI.ts:26](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/api/TagAPI.ts#L26)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[lib/api/BaseAPI.ts:6](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/api/BaseAPI.ts#L6)
+[lib/api/BaseAPI.ts:6](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/api/BaseAPI.ts#L6)
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 #### Defined in
 
-[lib/api/TagAPI.ts:25](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/api/TagAPI.ts#L25)
+[lib/api/TagAPI.ts:25](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/api/TagAPI.ts#L25)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[lib/api/BaseAPI.ts:7](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/api/BaseAPI.ts#L7)
+[lib/api/BaseAPI.ts:7](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/api/BaseAPI.ts#L7)
