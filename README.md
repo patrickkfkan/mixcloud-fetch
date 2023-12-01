@@ -234,6 +234,8 @@ Promise:
 
 <p>Fetches the target user's live stream.</p>
 
+> Note: it is possible that the live stream has ended. Check the `status` property to ascertain.
+
 **Returns**
 
 Promise:
