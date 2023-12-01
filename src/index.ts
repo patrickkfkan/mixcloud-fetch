@@ -6,6 +6,7 @@ export { default as PlaylistAPI } from './lib/api/PlaylistAPI.js';
 export { default as SearchAPI } from './lib/api/SearchAPI.js';
 export { default as TagAPI } from './lib/api/TagAPI.js';
 export { default as UserAPI } from './lib/api/UserAPI.js';
+export { default as MiscAPI } from './lib/api/MiscAPI.js';
 export { default as LiveStreamAPI } from './lib/api/LiveStreamAPI.js';
 
 export * from './lib/MixcloudFetch.js';
@@ -25,5 +26,6 @@ export * from './lib/entities/Misc.js';
 export * from './lib/entities/Playlist.js';
 export * from './lib/entities/Tag.js';
 export * from './lib/entities/User.js';
+export * from './lib/entities/LiveStream.js';
 
 export default new MixcloudFetch();
