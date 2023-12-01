@@ -34,18 +34,27 @@ export default class PlaylistAPI extends BaseAPI {
   }
 
   async getShows(params?: PlaylistAPIGetShowsParams) {
+    const sanitizedParams = this.sanitizePaginationParams(params);
     let data;
     try {
-      const page = this.sanitizePaginationParams(params);
       data = await this.fetcher.fetchGraphQL('Playlist', 'PlaylistItemsQuery', {
         playlistID: this.#playlistID,
-        count: page.limit,
-        cursor: page.pageToken
+        count: sanitizedParams.limit,
+        cursor: sanitizedParams.pageToken
       });
     }
     catch (error) {
       return this.handleFetchByIDError(error, PlaylistParser.parsePlaylistItems);
     }
-    return PlaylistParser.parsePlaylistItems(data);
+
+    const itemList = PlaylistParser.parsePlaylistItems(data);
+    if (itemList === null) {
+      return null;
+    }
+
+    return {
+      ...itemList,
+      params: sanitizedParams
+    };
   }
 }
