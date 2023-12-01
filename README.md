@@ -691,6 +691,9 @@ mcfetch.cache.clear();
 
 # Changelog
 
+1.0.1
+- `Playlist`: fix wrong type for `name` property
+
 1.0.0
 - Migrate to Typescript; package as ESM + CJS hybrid module
 - Add support for fetching live streams
