@@ -29,7 +29,7 @@
 
 #### Defined in
 
-[lib/api/UserAPI.ts:36](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/UserAPI.ts#L36)
+[lib/api/UserAPI.ts:36](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/api/UserAPI.ts#L36)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[lib/api/UserAPI.ts:74](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/UserAPI.ts#L74)
+[lib/api/UserAPI.ts:74](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/api/UserAPI.ts#L74)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[lib/api/UserAPI.ts:43](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/UserAPI.ts#L43)
+[lib/api/UserAPI.ts:43](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/api/UserAPI.ts#L43)
 
 ___
 
@@ -77,4 +77,4 @@ ___
 
 #### Defined in
 
-[lib/api/UserAPI.ts:50](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/UserAPI.ts#L50)
+[lib/api/UserAPI.ts:50](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/api/UserAPI.ts#L50)

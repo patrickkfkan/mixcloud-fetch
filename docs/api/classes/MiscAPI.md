@@ -27,7 +27,7 @@
 
 #### Defined in
 
-[lib/api/MiscAPI.ts:11](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/MiscAPI.ts#L11)
+[lib/api/MiscAPI.ts:11](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/api/MiscAPI.ts#L11)
 
 ___
 
@@ -41,4 +41,4 @@ ___
 
 #### Defined in
 
-[lib/api/MiscAPI.ts:6](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/MiscAPI.ts#L6)
+[lib/api/MiscAPI.ts:6](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/api/MiscAPI.ts#L6)

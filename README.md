@@ -691,6 +691,10 @@ mcfetch.cache.clear();
 
 # Changelog
 
+1.0.0
+- Migrate to Typescript; package as ESM + CJS hybrid module
+- Add support for fetching live streams
+
 0.1.1:
 - Fix fetch errors due to Mixcloud changing their GraphQL URL.
 

@@ -27,13 +27,13 @@
 
 #### Defined in
 
-[lib/api/LiveStreamAPI.ts:19](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/LiveStreamAPI.ts#L19)
+[lib/api/LiveStreamAPI.ts:19](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/api/LiveStreamAPI.ts#L19)
 
 ___
 
 ### getCurrent
 
-▸ **getCurrent**(`params?`): `Promise`\<\{ `items`: [`LiveStream`](../interfaces/LiveStream.md)[] ; `nextPageToken?`: `string` ; `params`: \{ `limit`: `number` ; `orderBy`: `NonNullable`\<`undefined` \| ``"popular"`` \| ``"mostRecent"``\> ; `pageToken`: `undefined` \| `string` ; `tag`: `string`  } = sanitizedParams }\>
+▸ **getCurrent**(`params?`): `Promise`\<\{ `items`: [`LiveStream`](../interfaces/LiveStream.md)[] ; `nextPageToken?`: `string` ; `params`: \{ `category`: `string` ; `limit`: `number` ; `orderBy`: `NonNullable`\<`undefined` \| ``"popular"`` \| ``"mostRecent"``\> ; `pageToken`: `undefined` \| `string`  } = sanitizedParams }\>
 
 #### Parameters
 
@@ -43,8 +43,8 @@ ___
 
 #### Returns
 
-`Promise`\<\{ `items`: [`LiveStream`](../interfaces/LiveStream.md)[] ; `nextPageToken?`: `string` ; `params`: \{ `limit`: `number` ; `orderBy`: `NonNullable`\<`undefined` \| ``"popular"`` \| ``"mostRecent"``\> ; `pageToken`: `undefined` \| `string` ; `tag`: `string`  } = sanitizedParams }\>
+`Promise`\<\{ `items`: [`LiveStream`](../interfaces/LiveStream.md)[] ; `nextPageToken?`: `string` ; `params`: \{ `category`: `string` ; `limit`: `number` ; `orderBy`: `NonNullable`\<`undefined` \| ``"popular"`` \| ``"mostRecent"``\> ; `pageToken`: `undefined` \| `string`  } = sanitizedParams }\>
 
 #### Defined in
 
-[lib/api/LiveStreamAPI.ts:24](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/LiveStreamAPI.ts#L24)
+[lib/api/LiveStreamAPI.ts:24](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/api/LiveStreamAPI.ts#L24)

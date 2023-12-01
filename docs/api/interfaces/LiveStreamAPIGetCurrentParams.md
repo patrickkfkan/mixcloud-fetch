@@ -25,7 +25,7 @@
 
 #### Defined in
 
-[lib/api/LiveStreamAPI.ts:14](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/LiveStreamAPI.ts#L14)
+[lib/api/LiveStreamAPI.ts:14](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/api/LiveStreamAPI.ts#L14)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[lib/api/BaseAPI.ts:6](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/BaseAPI.ts#L6)
+[lib/api/BaseAPI.ts:6](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/api/BaseAPI.ts#L6)
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 #### Defined in
 
-[lib/api/LiveStreamAPI.ts:13](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/LiveStreamAPI.ts#L13)
+[lib/api/LiveStreamAPI.ts:13](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/api/LiveStreamAPI.ts#L13)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[lib/api/BaseAPI.ts:7](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/BaseAPI.ts#L7)
+[lib/api/BaseAPI.ts:7](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/api/BaseAPI.ts#L7)

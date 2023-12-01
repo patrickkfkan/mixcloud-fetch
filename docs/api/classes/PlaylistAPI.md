@@ -27,7 +27,7 @@
 
 #### Defined in
 
-[lib/api/PlaylistAPI.ts:22](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/PlaylistAPI.ts#L22)
+[lib/api/PlaylistAPI.ts:22](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/api/PlaylistAPI.ts#L22)
 
 ___
 
@@ -47,4 +47,4 @@ ___
 
 #### Defined in
 
-[lib/api/PlaylistAPI.ts:36](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/PlaylistAPI.ts#L36)
+[lib/api/PlaylistAPI.ts:36](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/api/PlaylistAPI.ts#L36)

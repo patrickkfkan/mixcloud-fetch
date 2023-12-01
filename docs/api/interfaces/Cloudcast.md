@@ -29,7 +29,7 @@
 
 #### Defined in
 
-[lib/entities/Cloudcast.ts:11](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/entities/Cloudcast.ts#L11)
+[lib/entities/Cloudcast.ts:11](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/entities/Cloudcast.ts#L11)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[lib/entities/Cloudcast.ts:15](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/entities/Cloudcast.ts#L15)
+[lib/entities/Cloudcast.ts:15](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/entities/Cloudcast.ts#L15)
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 #### Defined in
 
-[lib/entities/Cloudcast.ts:7](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/entities/Cloudcast.ts#L7)
+[lib/entities/Cloudcast.ts:7](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/entities/Cloudcast.ts#L7)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[lib/entities/Cloudcast.ts:18](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/entities/Cloudcast.ts#L18)
+[lib/entities/Cloudcast.ts:18](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/entities/Cloudcast.ts#L18)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[lib/entities/Cloudcast.ts:13](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/entities/Cloudcast.ts#L13)
+[lib/entities/Cloudcast.ts:13](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/entities/Cloudcast.ts#L13)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[lib/entities/Cloudcast.ts:14](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/entities/Cloudcast.ts#L14)
+[lib/entities/Cloudcast.ts:14](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/entities/Cloudcast.ts#L14)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[lib/entities/Cloudcast.ts:8](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/entities/Cloudcast.ts#L8)
+[lib/entities/Cloudcast.ts:8](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/entities/Cloudcast.ts#L8)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[lib/entities/Cloudcast.ts:17](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/entities/Cloudcast.ts#L17)
+[lib/entities/Cloudcast.ts:17](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/entities/Cloudcast.ts#L17)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-[lib/entities/Cloudcast.ts:12](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/entities/Cloudcast.ts#L12)
+[lib/entities/Cloudcast.ts:12](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/entities/Cloudcast.ts#L12)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[lib/entities/Cloudcast.ts:9](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/entities/Cloudcast.ts#L9)
+[lib/entities/Cloudcast.ts:9](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/entities/Cloudcast.ts#L9)
 
 ___
 
@@ -137,7 +137,7 @@ ___
 
 #### Defined in
 
-[lib/entities/Cloudcast.ts:19](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/entities/Cloudcast.ts#L19)
+[lib/entities/Cloudcast.ts:19](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/entities/Cloudcast.ts#L19)
 
 ___
 
@@ -147,7 +147,7 @@ ___
 
 #### Defined in
 
-[lib/entities/Cloudcast.ts:16](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/entities/Cloudcast.ts#L16)
+[lib/entities/Cloudcast.ts:16](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/entities/Cloudcast.ts#L16)
 
 ___
 
@@ -157,7 +157,7 @@ ___
 
 #### Defined in
 
-[lib/entities/Cloudcast.ts:6](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/entities/Cloudcast.ts#L6)
+[lib/entities/Cloudcast.ts:6](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/entities/Cloudcast.ts#L6)
 
 ___
 
@@ -167,4 +167,4 @@ ___
 
 #### Defined in
 
-[lib/entities/Cloudcast.ts:10](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/entities/Cloudcast.ts#L10)
+[lib/entities/Cloudcast.ts:10](https://github.com/patrickkfkan/mixcloud-fetch/blob/a2692f0/src/lib/entities/Cloudcast.ts#L10)
