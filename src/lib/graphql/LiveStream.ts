@@ -1,4 +1,4 @@
-import { LIVE_STREAM_FIELDS } from './Fragments';
+import { LIVE_STREAM_FIELDS } from './Fragments.js';
 
 /**
 
