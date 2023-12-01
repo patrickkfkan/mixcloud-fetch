@@ -25,14 +25,14 @@ export default class LiveStreamAPI extends BaseAPI {
     const sanitizedParams = {
       ...this.sanitizePaginationParams(params),
       orderBy: this.sanitizeFromArray(params?.orderBy, CURRENT_ORDER_VALUES, 'popular'),
-      tag: params?.category || ''
+      category: params?.category || ''
     };
 
     const data = await this.fetcher.fetchGraphQL('LiveStream', 'LiveStreamListQuery', {
       count: sanitizedParams.limit,
       cursor: sanitizedParams.pageToken,
       orderBy: this.mapToGraphQLVariable(sanitizedParams.orderBy, CURRENT_ORDER_GRAPHQL_MAP),
-      tag: sanitizedParams.tag
+      tag: sanitizedParams.category
     });
 
     return {
