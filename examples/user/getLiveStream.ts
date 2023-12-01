@@ -1,8 +1,8 @@
 import mcfetch from '../../';
 
-const username = 'spartacus';
+const username = 'oncue365';
 const user = mcfetch.user(username);
 
-user.getInfo().then((results) => {
+user.getLiveStream().then((results) => {
   console.log(JSON.stringify(results, null, 2));
 });

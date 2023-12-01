@@ -1,22 +1,33 @@
-[mixcloud-fetch](../README.md) / TagAPIGetFeaturedParams
+[mixcloud-fetch](../README.md) / LiveStreamAPIGetCurrentParams
 
-# Interface: TagAPIGetFeaturedParams
+# Interface: LiveStreamAPIGetCurrentParams
 
 ## Hierarchy
 
 - [`APIPaginationParams`](APIPaginationParams.md)
 
-  ↳ **`TagAPIGetFeaturedParams`**
+  ↳ **`LiveStreamAPIGetCurrentParams`**
 
 ## Table of contents
 
 ### Properties
 
-- [limit](TagAPIGetFeaturedParams.md#limit)
-- [orderBy](TagAPIGetFeaturedParams.md#orderby)
-- [pageToken](TagAPIGetFeaturedParams.md#pagetoken)
+- [category](LiveStreamAPIGetCurrentParams.md#category)
+- [limit](LiveStreamAPIGetCurrentParams.md#limit)
+- [orderBy](LiveStreamAPIGetCurrentParams.md#orderby)
+- [pageToken](LiveStreamAPIGetCurrentParams.md#pagetoken)
 
 ## Properties
+
+### category
+
+• `Optional` **category**: `string`
+
+#### Defined in
+
+[lib/api/LiveStreamAPI.ts:14](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/LiveStreamAPI.ts#L14)
+
+___
 
 ### limit
 
@@ -34,11 +45,11 @@ ___
 
 ### orderBy
 
-• `Optional` **orderBy**: ``"popular"`` \| ``"latest"``
+• `Optional` **orderBy**: ``"popular"`` \| ``"mostRecent"``
 
 #### Defined in
 
-[lib/api/TagAPI.ts:30](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/TagAPI.ts#L30)
+[lib/api/LiveStreamAPI.ts:13](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/LiveStreamAPI.ts#L13)
 
 ___
 

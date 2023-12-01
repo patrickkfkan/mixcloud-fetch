@@ -1,18 +1,17 @@
 import { EOL } from 'os';
-import mcfetch, { SearchAPIGetTagsParams } from '../../';
+import mcfetch, { LiveStreamAPIGetCurrentParams } from '../../';
 
-const keywords = 'ambient lounge';
-const search = mcfetch.search(keywords);
-
-const params: SearchAPIGetTagsParams = {
-  limit: 10
+const params: LiveStreamAPIGetCurrentParams = {
+  limit: 25,
+  orderBy: 'mostRecent'
 };
 
-search.getTags(params).then((results) => {
+mcfetch.liveStream.getCurrent(params).then((results) => {
   console.log(JSON.stringify(results, null, 2));
+
   if (results.nextPageToken) {
     params.pageToken = results.nextPageToken;
-    search.getTags(params).then((results) => {
+    mcfetch.liveStream.getCurrent(params).then((results) => {
       console.log(`${EOL}Next set of results:`);
       console.log(JSON.stringify(results, null, 2));
     });

@@ -44,7 +44,7 @@ export default class PlaylistAPI extends BaseAPI {
       });
     }
     catch (error) {
-      return this.handleFetchByIDError(error, PlaylistParser.parsePlaylistItems)
+      return this.handleFetchByIDError(error, PlaylistParser.parsePlaylistItems);
     }
     return PlaylistParser.parsePlaylistItems(data);
   }

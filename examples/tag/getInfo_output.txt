@@ -1,4 +1,12 @@
 [
-  { type: 'tag', name: 'Ambient', slug: 'ambient' },
-  { type: 'tag', name: 'Funk', slug: 'funk' }
+  {
+    "type": "tag",
+    "name": "Ambient",
+    "slug": "ambient"
+  },
+  {
+    "type": "tag",
+    "name": "Funk",
+    "slug": "funk"
+  }
 ]

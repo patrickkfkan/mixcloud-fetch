@@ -13,6 +13,7 @@
 ### Methods
 
 - [getInfo](UserAPI.md#getinfo)
+- [getLiveStream](UserAPI.md#getlivestream)
 - [getPlaylists](UserAPI.md#getplaylists)
 - [getShows](UserAPI.md#getshows)
 
@@ -28,27 +29,41 @@
 
 #### Defined in
 
-[lib/api/UserAPI.ts:34](https://github.com/patrickkfkan/mixcloud-fetch/blob/1cf2daf/src/lib/api/UserAPI.ts#L34)
+[lib/api/UserAPI.ts:36](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/UserAPI.ts#L36)
+
+___
+
+### getLiveStream
+
+▸ **getLiveStream**(): `Promise`\<``null`` \| [`LiveStream`](../interfaces/LiveStream.md)\>
+
+#### Returns
+
+`Promise`\<``null`` \| [`LiveStream`](../interfaces/LiveStream.md)\>
+
+#### Defined in
+
+[lib/api/UserAPI.ts:74](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/UserAPI.ts#L74)
 
 ___
 
 ### getPlaylists
 
-▸ **getPlaylists**(): `Promise`\<[`ItemList`](../interfaces/ItemList.md)\<[`Playlist`](../interfaces/Playlist.md)\>\>
+▸ **getPlaylists**(): `Promise`\<``null`` \| [`ItemList`](../interfaces/ItemList.md)\<[`Playlist`](../interfaces/Playlist.md)\>\>
 
 #### Returns
 
-`Promise`\<[`ItemList`](../interfaces/ItemList.md)\<[`Playlist`](../interfaces/Playlist.md)\>\>
+`Promise`\<``null`` \| [`ItemList`](../interfaces/ItemList.md)\<[`Playlist`](../interfaces/Playlist.md)\>\>
 
 #### Defined in
 
-[lib/api/UserAPI.ts:41](https://github.com/patrickkfkan/mixcloud-fetch/blob/1cf2daf/src/lib/api/UserAPI.ts#L41)
+[lib/api/UserAPI.ts:43](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/UserAPI.ts#L43)
 
 ___
 
 ### getShows
 
-▸ **getShows**(`params?`): `Promise`\<\{ `items`: [`Cloudcast`](../interfaces/Cloudcast.md)[] ; `nextPageToken?`: `string` ; `params`: \{ `limit`: `number` ; `orderBy`: `NonNullable`\<`undefined` \| ``"trending"`` \| ``"popular"`` \| ``"latest"`` \| ``"oldest"``\> ; `pageToken`: `undefined` \| `string`  } = sanitizedParams }\>
+▸ **getShows**(`params?`): `Promise`\<``null`` \| \{ `items`: [`Cloudcast`](../interfaces/Cloudcast.md)[] ; `nextPageToken?`: `string` ; `params`: \{ `limit`: `number` ; `orderBy`: `NonNullable`\<`undefined` \| ``"trending"`` \| ``"popular"`` \| ``"latest"`` \| ``"oldest"``\> ; `pageToken`: `undefined` \| `string`  } = sanitizedParams }\>
 
 #### Parameters
 
@@ -58,8 +73,8 @@ ___
 
 #### Returns
 
-`Promise`\<\{ `items`: [`Cloudcast`](../interfaces/Cloudcast.md)[] ; `nextPageToken?`: `string` ; `params`: \{ `limit`: `number` ; `orderBy`: `NonNullable`\<`undefined` \| ``"trending"`` \| ``"popular"`` \| ``"latest"`` \| ``"oldest"``\> ; `pageToken`: `undefined` \| `string`  } = sanitizedParams }\>
+`Promise`\<``null`` \| \{ `items`: [`Cloudcast`](../interfaces/Cloudcast.md)[] ; `nextPageToken?`: `string` ; `params`: \{ `limit`: `number` ; `orderBy`: `NonNullable`\<`undefined` \| ``"trending"`` \| ``"popular"`` \| ``"latest"`` \| ``"oldest"``\> ; `pageToken`: `undefined` \| `string`  } = sanitizedParams }\>
 
 #### Defined in
 
-[lib/api/UserAPI.ts:48](https://github.com/patrickkfkan/mixcloud-fetch/blob/1cf2daf/src/lib/api/UserAPI.ts#L48)
+[lib/api/UserAPI.ts:50](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/UserAPI.ts#L50)

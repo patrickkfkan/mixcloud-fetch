@@ -20,7 +20,7 @@
 
 ### getFeatured
 
-▸ **getFeatured**(`params?`): `Promise`\<\{ `items`: [`Cloudcast`](../interfaces/Cloudcast.md)[] ; `nextPageToken?`: `string` ; `params`: \{ `limit`: `number` ; `orderBy`: `NonNullable`\<`undefined` \| ``"popular"`` \| ``"latest"``\> ; `pageToken`: `undefined` \| `string`  } = sanitizedParams; `selectedTags`: [`Tag`](../interfaces/Tag.md)[]  }\>
+▸ **getFeatured**(`params?`): `Promise`\<``null`` \| \{ `items`: [`Cloudcast`](../interfaces/Cloudcast.md)[] ; `nextPageToken?`: `string` ; `params`: \{ `limit`: `number` ; `orderBy`: `NonNullable`\<`undefined` \| ``"popular"`` \| ``"latest"``\> ; `pageToken`: `undefined` \| `string`  } = sanitizedParams; `selectedTags`: [`Tag`](../interfaces/Tag.md)[]  }\>
 
 #### Parameters
 
@@ -30,31 +30,31 @@
 
 #### Returns
 
-`Promise`\<\{ `items`: [`Cloudcast`](../interfaces/Cloudcast.md)[] ; `nextPageToken?`: `string` ; `params`: \{ `limit`: `number` ; `orderBy`: `NonNullable`\<`undefined` \| ``"popular"`` \| ``"latest"``\> ; `pageToken`: `undefined` \| `string`  } = sanitizedParams; `selectedTags`: [`Tag`](../interfaces/Tag.md)[]  }\>
+`Promise`\<``null`` \| \{ `items`: [`Cloudcast`](../interfaces/Cloudcast.md)[] ; `nextPageToken?`: `string` ; `params`: \{ `limit`: `number` ; `orderBy`: `NonNullable`\<`undefined` \| ``"popular"`` \| ``"latest"``\> ; `pageToken`: `undefined` \| `string`  } = sanitizedParams; `selectedTags`: [`Tag`](../interfaces/Tag.md)[]  }\>
 
 #### Defined in
 
-[lib/api/TagAPI.ts:78](https://github.com/patrickkfkan/mixcloud-fetch/blob/1cf2daf/src/lib/api/TagAPI.ts#L78)
+[lib/api/TagAPI.ts:83](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/TagAPI.ts#L83)
 
 ___
 
 ### getInfo
 
-▸ **getInfo**(): `Promise`\<[`Tag`](../interfaces/Tag.md)[]\>
+▸ **getInfo**(): `Promise`\<``null`` \| [`Tag`](../interfaces/Tag.md)[]\>
 
 #### Returns
 
-`Promise`\<[`Tag`](../interfaces/Tag.md)[]\>
+`Promise`\<``null`` \| [`Tag`](../interfaces/Tag.md)[]\>
 
 #### Defined in
 
-[lib/api/TagAPI.ts:49](https://github.com/patrickkfkan/mixcloud-fetch/blob/1cf2daf/src/lib/api/TagAPI.ts#L49)
+[lib/api/TagAPI.ts:49](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/TagAPI.ts#L49)
 
 ___
 
 ### getShows
 
-▸ **getShows**(`params?`): `Promise`\<\{ `items`: [`Cloudcast`](../interfaces/Cloudcast.md)[] ; `nextPageToken?`: `string` ; `params`: \{ `country`: `any` ; `limit`: `number` ; `orderBy`: `NonNullable`\<`undefined` \| ``"trending"`` \| ``"popular"`` \| ``"latest"``\> = sanitizedOrderBy; `pageToken`: `undefined` \| `string`  } = sanitizedParams; `selectedTags`: [`Tag`](../interfaces/Tag.md)[]  }\>
+▸ **getShows**(`params?`): `Promise`\<``null`` \| \{ `items`: [`Cloudcast`](../interfaces/Cloudcast.md)[] ; `nextPageToken?`: `string` ; `params`: \{ `country`: `any` ; `limit`: `number` ; `orderBy`: `NonNullable`\<`undefined` \| ``"trending"`` \| ``"popular"`` \| ``"latest"``\> = sanitizedOrderBy; `pageToken`: `undefined` \| `string`  } = sanitizedParams; `selectedTags`: [`Tag`](../interfaces/Tag.md)[]  }\>
 
 #### Parameters
 
@@ -64,8 +64,8 @@ ___
 
 #### Returns
 
-`Promise`\<\{ `items`: [`Cloudcast`](../interfaces/Cloudcast.md)[] ; `nextPageToken?`: `string` ; `params`: \{ `country`: `any` ; `limit`: `number` ; `orderBy`: `NonNullable`\<`undefined` \| ``"trending"`` \| ``"popular"`` \| ``"latest"``\> = sanitizedOrderBy; `pageToken`: `undefined` \| `string`  } = sanitizedParams; `selectedTags`: [`Tag`](../interfaces/Tag.md)[]  }\>
+`Promise`\<``null`` \| \{ `items`: [`Cloudcast`](../interfaces/Cloudcast.md)[] ; `nextPageToken?`: `string` ; `params`: \{ `country`: `any` ; `limit`: `number` ; `orderBy`: `NonNullable`\<`undefined` \| ``"trending"`` \| ``"popular"`` \| ``"latest"``\> = sanitizedOrderBy; `pageToken`: `undefined` \| `string`  } = sanitizedParams; `selectedTags`: [`Tag`](../interfaces/Tag.md)[]  }\>
 
 #### Defined in
 
-[lib/api/TagAPI.ts:56](https://github.com/patrickkfkan/mixcloud-fetch/blob/1cf2daf/src/lib/api/TagAPI.ts#L56)
+[lib/api/TagAPI.ts:56](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/TagAPI.ts#L56)

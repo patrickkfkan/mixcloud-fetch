@@ -65,16 +65,16 @@ export default abstract class BaseAPI {
 
   /**
    * @internal
-   * 
-   * @param error 
-   * @param tryParseFn 
-   * @returns 
+   *
+   * @param error
+   * @param tryParseFn
+   * @returns
    */
   protected handleFetchByIDError<T>(error: any, tryParseFn: (data: any) => T | null) {
     if (error instanceof FetcherGraphQLResultError) {
       try {
         /**
-         * error.json should contain the the GraphQL result even
+         * Error.json should contain the the GraphQL result even
          * if ID was invalid. Confirm if we can parse it and get a
          * `null` result.
          */

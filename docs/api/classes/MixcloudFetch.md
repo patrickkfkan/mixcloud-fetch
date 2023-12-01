@@ -12,6 +12,8 @@
 
 - [cache](MixcloudFetch.md#cache)
 - [limiter](MixcloudFetch.md#limiter)
+- [liveStream](MixcloudFetch.md#livestream)
+- [misc](MixcloudFetch.md#misc)
 
 ### Methods
 
@@ -29,7 +31,7 @@
 
 #### Defined in
 
-lib/MixcloudFetch.ts:17
+[lib/MixcloudFetch.ts:24](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/MixcloudFetch.ts#L24)
 
 ## Accessors
 
@@ -43,7 +45,7 @@ lib/MixcloudFetch.ts:17
 
 #### Defined in
 
-lib/MixcloudFetch.ts:46
+[lib/MixcloudFetch.ts:63](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/MixcloudFetch.ts#L63)
 
 ___
 
@@ -57,7 +59,35 @@ ___
 
 #### Defined in
 
-lib/MixcloudFetch.ts:50
+[lib/MixcloudFetch.ts:67](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/MixcloudFetch.ts#L67)
+
+___
+
+### liveStream
+
+• `get` **liveStream**(): [`LiveStreamAPI`](LiveStreamAPI.md)
+
+#### Returns
+
+[`LiveStreamAPI`](LiveStreamAPI.md)
+
+#### Defined in
+
+[lib/MixcloudFetch.ts:59](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/MixcloudFetch.ts#L59)
+
+___
+
+### misc
+
+• `get` **misc**(): [`MiscAPI`](MiscAPI.md)
+
+#### Returns
+
+[`MiscAPI`](MiscAPI.md)
+
+#### Defined in
+
+[lib/MixcloudFetch.ts:55](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/MixcloudFetch.ts#L55)
 
 ## Methods
 
@@ -77,7 +107,7 @@ lib/MixcloudFetch.ts:50
 
 #### Defined in
 
-lib/MixcloudFetch.ts:26
+[lib/MixcloudFetch.ts:35](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/MixcloudFetch.ts#L35)
 
 ___
 
@@ -97,7 +127,7 @@ ___
 
 #### Defined in
 
-lib/MixcloudFetch.ts:30
+[lib/MixcloudFetch.ts:39](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/MixcloudFetch.ts#L39)
 
 ___
 
@@ -117,7 +147,7 @@ ___
 
 #### Defined in
 
-lib/MixcloudFetch.ts:34
+[lib/MixcloudFetch.ts:43](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/MixcloudFetch.ts#L43)
 
 ___
 
@@ -137,7 +167,7 @@ ___
 
 #### Defined in
 
-lib/MixcloudFetch.ts:38
+[lib/MixcloudFetch.ts:47](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/MixcloudFetch.ts#L47)
 
 ___
 
@@ -157,4 +187,4 @@ ___
 
 #### Defined in
 
-lib/MixcloudFetch.ts:42
+[lib/MixcloudFetch.ts:51](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/MixcloudFetch.ts#L51)

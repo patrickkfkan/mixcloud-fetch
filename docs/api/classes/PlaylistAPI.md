@@ -27,13 +27,13 @@
 
 #### Defined in
 
-[lib/api/PlaylistAPI.ts:22](https://github.com/patrickkfkan/mixcloud-fetch/blob/1cf2daf/src/lib/api/PlaylistAPI.ts#L22)
+[lib/api/PlaylistAPI.ts:22](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/PlaylistAPI.ts#L22)
 
 ___
 
 ### getShows
 
-▸ **getShows**(`params?`): `Promise`\<[`ItemList`](../interfaces/ItemList.md)\<[`Cloudcast`](../interfaces/Cloudcast.md)\>\>
+▸ **getShows**(`params?`): `Promise`\<``null`` \| [`ItemList`](../interfaces/ItemList.md)\<[`Cloudcast`](../interfaces/Cloudcast.md)\>\>
 
 #### Parameters
 
@@ -43,8 +43,8 @@ ___
 
 #### Returns
 
-`Promise`\<[`ItemList`](../interfaces/ItemList.md)\<[`Cloudcast`](../interfaces/Cloudcast.md)\>\>
+`Promise`\<``null`` \| [`ItemList`](../interfaces/ItemList.md)\<[`Cloudcast`](../interfaces/Cloudcast.md)\>\>
 
 #### Defined in
 
-[lib/api/PlaylistAPI.ts:29](https://github.com/patrickkfkan/mixcloud-fetch/blob/1cf2daf/src/lib/api/PlaylistAPI.ts#L29)
+[lib/api/PlaylistAPI.ts:36](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/api/PlaylistAPI.ts#L36)

@@ -1,44 +1,196 @@
 {
-  music: [
-    { type: 'category', name: 'Ambient', slug: 'ambient' },
-    { type: 'category', name: 'Bass', slug: 'bass' },
-    { type: 'category', name: 'Beats', slug: 'beats' },
-    { type: 'category', name: 'Chillout', slug: 'chillout' },
-    { type: 'category', name: 'Classical', slug: 'classical' },
-    { type: 'category', name: 'Deep House', slug: 'deep-house' },
-    { type: 'category', name: 'Drum & Bass', slug: 'drum-bass' },
-    { type: 'category', name: 'Dub', slug: 'dub' },
-    { type: 'category', name: 'Dubstep', slug: 'dubstep' },
-    { type: 'category', name: 'EDM', slug: 'edm' },
-    { type: 'category', name: 'Electronica', slug: 'electronica' },
-    { type: 'category', name: 'Funk', slug: 'funk' },
-    { type: 'category', name: 'Garage', slug: 'garage' },
-    { type: 'category', name: 'Hip Hop', slug: 'hip-hop' },
-    { type: 'category', name: 'House', slug: 'house' },
-    { type: 'category', name: 'Indie', slug: 'indie' },
-    { type: 'category', name: 'Jazz', slug: 'jazz' },
-    { type: 'category', name: 'Pop', slug: 'pop' },
-    { type: 'category', name: 'Rap', slug: 'rap' },
-    { type: 'category', name: 'Reggae', slug: 'reggae' },
-    { type: 'category', name: 'R&B', slug: 'rb' },
-    { type: 'category', name: 'Rock', slug: 'rock' },
-    { type: 'category', name: 'Soul', slug: 'soul' },
-    { type: 'category', name: 'Tech House', slug: 'tech-house' },
-    { type: 'category', name: 'Techno', slug: 'techno' },
-    { type: 'category', name: 'Trance', slug: 'trance' },
-    { type: 'category', name: 'Trap', slug: 'trap' },
-    { type: 'category', name: 'World', slug: 'world' }
+  "music": [
+    {
+      "type": "category",
+      "name": "Ambient",
+      "slug": "ambient"
+    },
+    {
+      "type": "category",
+      "name": "Bass",
+      "slug": "bass"
+    },
+    {
+      "type": "category",
+      "name": "Beats",
+      "slug": "beats"
+    },
+    {
+      "type": "category",
+      "name": "Chillout",
+      "slug": "chillout"
+    },
+    {
+      "type": "category",
+      "name": "Classical",
+      "slug": "classical"
+    },
+    {
+      "type": "category",
+      "name": "Deep House",
+      "slug": "deep-house"
+    },
+    {
+      "type": "category",
+      "name": "Drum & Bass",
+      "slug": "drum-bass"
+    },
+    {
+      "type": "category",
+      "name": "Dub",
+      "slug": "dub"
+    },
+    {
+      "type": "category",
+      "name": "Dubstep",
+      "slug": "dubstep"
+    },
+    {
+      "type": "category",
+      "name": "EDM",
+      "slug": "edm"
+    },
+    {
+      "type": "category",
+      "name": "Electronica",
+      "slug": "electronica"
+    },
+    {
+      "type": "category",
+      "name": "Funk",
+      "slug": "funk"
+    },
+    {
+      "type": "category",
+      "name": "Garage",
+      "slug": "garage"
+    },
+    {
+      "type": "category",
+      "name": "Hip Hop",
+      "slug": "hip-hop"
+    },
+    {
+      "type": "category",
+      "name": "House",
+      "slug": "house"
+    },
+    {
+      "type": "category",
+      "name": "Indie",
+      "slug": "indie"
+    },
+    {
+      "type": "category",
+      "name": "Jazz",
+      "slug": "jazz"
+    },
+    {
+      "type": "category",
+      "name": "Pop",
+      "slug": "pop"
+    },
+    {
+      "type": "category",
+      "name": "Rap",
+      "slug": "rap"
+    },
+    {
+      "type": "category",
+      "name": "Reggae",
+      "slug": "reggae"
+    },
+    {
+      "type": "category",
+      "name": "R&B",
+      "slug": "rb"
+    },
+    {
+      "type": "category",
+      "name": "Rock",
+      "slug": "rock"
+    },
+    {
+      "type": "category",
+      "name": "Soul",
+      "slug": "soul"
+    },
+    {
+      "type": "category",
+      "name": "Tech House",
+      "slug": "tech-house"
+    },
+    {
+      "type": "category",
+      "name": "Techno",
+      "slug": "techno"
+    },
+    {
+      "type": "category",
+      "name": "Trance",
+      "slug": "trance"
+    },
+    {
+      "type": "category",
+      "name": "Trap",
+      "slug": "trap"
+    },
+    {
+      "type": "category",
+      "name": "World",
+      "slug": "world"
+    }
   ],
-  talk: [
-    { type: 'category', name: 'Business', slug: 'business' },
-    { type: 'category', name: 'Comedy', slug: 'comedy' },
-    { type: 'category', name: 'Education', slug: 'education' },
-    { type: 'category', name: 'Lifestyle', slug: 'lifestyle' },
-    { type: 'category', name: 'Interview', slug: 'interview' },
-    { type: 'category', name: 'News', slug: 'news' },
-    { type: 'category', name: 'Politics', slug: 'politics' },
-    { type: 'category', name: 'Science', slug: 'science' },
-    { type: 'category', name: 'Sport', slug: 'sport' },
-    { type: 'category', name: 'Technology', slug: 'technology' }
+  "talk": [
+    {
+      "type": "category",
+      "name": "Business",
+      "slug": "business"
+    },
+    {
+      "type": "category",
+      "name": "Comedy",
+      "slug": "comedy"
+    },
+    {
+      "type": "category",
+      "name": "Education",
+      "slug": "education"
+    },
+    {
+      "type": "category",
+      "name": "Lifestyle",
+      "slug": "lifestyle"
+    },
+    {
+      "type": "category",
+      "name": "Interview",
+      "slug": "interview"
+    },
+    {
+      "type": "category",
+      "name": "News",
+      "slug": "news"
+    },
+    {
+      "type": "category",
+      "name": "Politics",
+      "slug": "politics"
+    },
+    {
+      "type": "category",
+      "name": "Science",
+      "slug": "science"
+    },
+    {
+      "type": "category",
+      "name": "Sport",
+      "slug": "sport"
+    },
+    {
+      "type": "category",
+      "name": "Technology",
+      "slug": "technology"
+    }
   ]
 }

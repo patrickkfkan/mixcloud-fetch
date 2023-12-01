@@ -26,7 +26,7 @@
 
 #### Defined in
 
-lib/MixcloudFetch.ts:64
+[lib/MixcloudFetch.ts:81](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/MixcloudFetch.ts#L81)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-lib/MixcloudFetch.ts:63
+[lib/MixcloudFetch.ts:80](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/MixcloudFetch.ts#L80)
 
 ___
 
@@ -74,4 +74,4 @@ ___
 
 #### Defined in
 
-lib/MixcloudFetch.ts:62
+[lib/MixcloudFetch.ts:79](https://github.com/patrickkfkan/mixcloud-fetch/blob/e4ecdc8/src/lib/MixcloudFetch.ts#L79)

@@ -1,66 +1,119 @@
 {
-  items: [
-    { type: 'tag', name: 'ambient lounge', slug: 'ambient-lounge' },
-    { type: 'tag', name: 'ambient', slug: 'ambient' },
-    { type: 'tag', name: 'lounge', slug: 'lounge' },
-    { type: 'tag', name: 'ambiente lounge', slug: 'ambiente-lounge' },
+  "items": [
     {
-      type: 'tag',
-      name: 'downtempo ambient chillout lounge',
-      slug: 'downtempo-ambient-chillout-lounge'
+      "type": "tag",
+      "name": "ambient lounge",
+      "slug": "ambient-lounge"
     },
     {
-      type: 'tag',
-      name: 'experimental ambient',
-      slug: 'experimental-ambient'
+      "type": "tag",
+      "name": "ambient",
+      "slug": "ambient"
     },
     {
-      type: 'tag',
-      name: 'lounge chillout downtempo',
-      slug: 'lounge-chillout-downtempo'
+      "type": "tag",
+      "name": "lounge",
+      "slug": "lounge"
     },
-    { type: 'tag', name: 'lounge music', slug: 'lounge-music' },
-    { type: 'tag', name: 'dark ambient', slug: 'dark-ambient' },
-    { type: 'tag', name: 'ambient techno', slug: 'ambient-techno' }
+    {
+      "type": "tag",
+      "name": "ambiente lounge",
+      "slug": "ambiente-lounge"
+    },
+    {
+      "type": "tag",
+      "name": "downtempo ambient chillout lounge",
+      "slug": "downtempo-ambient-chillout-lounge"
+    },
+    {
+      "type": "tag",
+      "name": "experimental ambient",
+      "slug": "experimental-ambient"
+    },
+    {
+      "type": "tag",
+      "name": "lounge chillout downtempo",
+      "slug": "lounge-chillout-downtempo"
+    },
+    {
+      "type": "tag",
+      "name": "lounge music",
+      "slug": "lounge-music"
+    },
+    {
+      "type": "tag",
+      "name": "dark ambient",
+      "slug": "dark-ambient"
+    },
+    {
+      "type": "tag",
+      "name": "ambient techno",
+      "slug": "ambient-techno"
+    }
   ],
-  nextPageToken: 'YXJyYXljb25uZWN0aW9uOjk=',
-  params: { limit: 10 }
+  "nextPageToken": "YXJyYXljb25uZWN0aW9uOjk=",
+  "params": {
+    "limit": 10
+  }
 }
 
 Next set of results:
 {
-  items: [
-    { type: 'tag', name: 'chillout & lounge', slug: 'chillout-lounge' },
-    { type: 'tag', name: 'ambient house', slug: 'ambient-house' },
-    { type: 'tag', name: 'young', slug: 'young' },
+  "items": [
     {
-      type: 'tag',
-      name: 'ambient sleep drone atmospheric electronic',
-      slug: 'ambient-sleep-drone-atmospheric-electronic'
-    },
-    { type: 'tag', name: 'ambient dub', slug: 'ambient-dub' },
-    {
-      type: 'tag',
-      name: 'ambient drum and bass',
-      slug: 'ambient-drum-and-bass'
+      "type": "tag",
+      "name": "chillout & lounge",
+      "slug": "chillout-lounge"
     },
     {
-      type: 'tag',
-      name: 'ambient chillout ethnic psychill',
-      slug: 'ambient-chillout-ethnic-psychill'
-    },
-    { type: 'tag', name: 'ambiente', slug: 'ambiente' },
-    {
-      type: 'tag',
-      name: 'electro swing / nu jazz / lounge / neo bossa',
-      slug: 'electro-swing-nu-jazz-lounge-neo-bossa'
+      "type": "tag",
+      "name": "ambient house",
+      "slug": "ambient-house"
     },
     {
-      type: 'tag',
-      name: 'chillout ambient downtempo lounge',
-      slug: 'chillout-ambient-downtempo-lounge'
+      "type": "tag",
+      "name": "young",
+      "slug": "young"
+    },
+    {
+      "type": "tag",
+      "name": "ambient sleep drone atmospheric electronic",
+      "slug": "ambient-sleep-drone-atmospheric-electronic"
+    },
+    {
+      "type": "tag",
+      "name": "ambient dub",
+      "slug": "ambient-dub"
+    },
+    {
+      "type": "tag",
+      "name": "ambient drum and bass",
+      "slug": "ambient-drum-and-bass"
+    },
+    {
+      "type": "tag",
+      "name": "ambient chillout ethnic psychill",
+      "slug": "ambient-chillout-ethnic-psychill"
+    },
+    {
+      "type": "tag",
+      "name": "ambiente",
+      "slug": "ambiente"
+    },
+    {
+      "type": "tag",
+      "name": "electro swing / nu jazz / lounge / neo bossa",
+      "slug": "electro-swing-nu-jazz-lounge-neo-bossa"
+    },
+    {
+      "type": "tag",
+      "name": "chillout ambient downtempo lounge",
+      "slug": "chillout-ambient-downtempo-lounge"
     }
   ],
-  nextPageToken: 'YXJyYXljb25uZWN0aW9uOjE5',
-  params: { limit: 10, pageToken: 'YXJyYXljb25uZWN0aW9uOjk=' }
+  "nextPageToken": "YXJyYXljb25uZWN0aW9uOjE5",
+  "params": {
+    "limit": 10,
+    "pageToken": "YXJyYXljb25uZWN0aW9uOjk="
+  }
 }
