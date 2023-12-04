@@ -691,6 +691,9 @@ mcfetch.cache.clear();
 
 # Changelog
 
+1.0.2
+- Fix regression: `PlaylistAPI#getShows()` missing params
+
 1.0.1
 - `Playlist`: fix wrong type for `name` property
 
