@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[lib/entities/LiveStream.ts:12](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/LiveStream.ts#L12)
+[lib/entities/LiveStream.ts:12](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/LiveStream.ts#L12)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[lib/entities/LiveStream.ts:8](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/LiveStream.ts#L8)
+[lib/entities/LiveStream.ts:8](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/LiveStream.ts#L8)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[lib/entities/LiveStream.ts:6](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/LiveStream.ts#L6)
+[lib/entities/LiveStream.ts:6](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/LiveStream.ts#L6)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[lib/entities/LiveStream.ts:18](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/LiveStream.ts#L18)
+[lib/entities/LiveStream.ts:18](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/LiveStream.ts#L18)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[lib/entities/LiveStream.ts:13](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/LiveStream.ts#L13)
+[lib/entities/LiveStream.ts:13](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/LiveStream.ts#L13)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[lib/entities/LiveStream.ts:7](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/LiveStream.ts#L7)
+[lib/entities/LiveStream.ts:7](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/LiveStream.ts#L7)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[lib/entities/LiveStream.ts:10](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/LiveStream.ts#L10)
+[lib/entities/LiveStream.ts:10](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/LiveStream.ts#L10)
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-[lib/entities/LiveStream.ts:11](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/LiveStream.ts#L11)
+[lib/entities/LiveStream.ts:11](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/LiveStream.ts#L11)
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-[lib/entities/LiveStream.ts:17](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/LiveStream.ts#L17)
+[lib/entities/LiveStream.ts:17](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/LiveStream.ts#L17)
 
 ___
 
@@ -120,7 +120,7 @@ ___
 
 #### Defined in
 
-[lib/entities/LiveStream.ts:16](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/LiveStream.ts#L16)
+[lib/entities/LiveStream.ts:16](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/LiveStream.ts#L16)
 
 ___
 
@@ -130,7 +130,7 @@ ___
 
 #### Defined in
 
-[lib/entities/LiveStream.ts:14](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/LiveStream.ts#L14)
+[lib/entities/LiveStream.ts:14](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/LiveStream.ts#L14)
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 #### Defined in
 
-[lib/entities/LiveStream.ts:15](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/LiveStream.ts#L15)
+[lib/entities/LiveStream.ts:15](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/LiveStream.ts#L15)
 
 ___
 
@@ -150,7 +150,7 @@ ___
 
 #### Defined in
 
-[lib/entities/LiveStream.ts:9](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/LiveStream.ts#L9)
+[lib/entities/LiveStream.ts:9](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/LiveStream.ts#L9)
 
 ___
 
@@ -166,7 +166,7 @@ ___
 
 #### Defined in
 
-[lib/entities/LiveStream.ts:19](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/LiveStream.ts#L19)
+[lib/entities/LiveStream.ts:19](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/LiveStream.ts#L19)
 
 ___
 
@@ -176,4 +176,4 @@ ___
 
 #### Defined in
 
-[lib/entities/LiveStream.ts:5](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/LiveStream.ts#L5)
+[lib/entities/LiveStream.ts:5](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/LiveStream.ts#L5)

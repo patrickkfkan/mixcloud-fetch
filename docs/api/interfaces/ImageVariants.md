@@ -25,7 +25,7 @@
 
 #### Defined in
 
-[lib/entities/ImageVariants.ts:10](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/ImageVariants.ts#L10)
+[lib/entities/ImageVariants.ts:10](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/ImageVariants.ts#L10)
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 #### Defined in
 
-[lib/entities/ImageVariants.ts:4](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/ImageVariants.ts#L4)
+[lib/entities/ImageVariants.ts:4](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/ImageVariants.ts#L4)
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 #### Defined in
 
-[lib/entities/ImageVariants.ts:7](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/ImageVariants.ts#L7)
+[lib/entities/ImageVariants.ts:7](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/ImageVariants.ts#L7)
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 #### Defined in
 
-[lib/entities/ImageVariants.ts:3](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/ImageVariants.ts#L3)
+[lib/entities/ImageVariants.ts:3](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/ImageVariants.ts#L3)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[lib/entities/ImageVariants.ts:5](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/ImageVariants.ts#L5)
+[lib/entities/ImageVariants.ts:5](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/ImageVariants.ts#L5)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[lib/entities/ImageVariants.ts:6](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/ImageVariants.ts#L6)
+[lib/entities/ImageVariants.ts:6](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/ImageVariants.ts#L6)
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-[lib/entities/ImageVariants.ts:2](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/ImageVariants.ts#L2)
+[lib/entities/ImageVariants.ts:2](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/ImageVariants.ts#L2)
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 #### Defined in
 
-[lib/entities/ImageVariants.ts:8](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/ImageVariants.ts#L8)
+[lib/entities/ImageVariants.ts:8](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/ImageVariants.ts#L8)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[lib/entities/ImageVariants.ts:9](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/ImageVariants.ts#L9)
+[lib/entities/ImageVariants.ts:9](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/ImageVariants.ts#L9)
 
 ___
 
@@ -115,4 +115,4 @@ ___
 
 #### Defined in
 
-[lib/entities/ImageVariants.ts:11](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/ImageVariants.ts#L11)
+[lib/entities/ImageVariants.ts:11](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/ImageVariants.ts#L11)

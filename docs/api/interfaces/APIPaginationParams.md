@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[lib/api/BaseAPI.ts:6](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/api/BaseAPI.ts#L6)
+[lib/api/BaseAPI.ts:6](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/api/BaseAPI.ts#L6)
 
 ___
 
@@ -43,4 +43,4 @@ ___
 
 #### Defined in
 
-[lib/api/BaseAPI.ts:7](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/api/BaseAPI.ts#L7)
+[lib/api/BaseAPI.ts:7](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/api/BaseAPI.ts#L7)

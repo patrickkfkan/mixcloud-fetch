@@ -27,13 +27,13 @@
 
 #### Defined in
 
-[lib/api/PlaylistAPI.ts:22](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/api/PlaylistAPI.ts#L22)
+[lib/api/PlaylistAPI.ts:22](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/api/PlaylistAPI.ts#L22)
 
 ___
 
 ### getShows
 
-▸ **getShows**(`params?`): `Promise`\<``null`` \| [`ItemList`](../interfaces/ItemList.md)\<[`Cloudcast`](../interfaces/Cloudcast.md)\>\>
+▸ **getShows**(`params?`): `Promise`\<``null`` \| \{ `items`: [`Cloudcast`](../interfaces/Cloudcast.md)[] ; `nextPageToken?`: `string` ; `params`: \{ `limit`: `number` ; `pageToken`: `undefined` \| `string`  } = sanitizedParams }\>
 
 #### Parameters
 
@@ -43,8 +43,8 @@ ___
 
 #### Returns
 
-`Promise`\<``null`` \| [`ItemList`](../interfaces/ItemList.md)\<[`Cloudcast`](../interfaces/Cloudcast.md)\>\>
+`Promise`\<``null`` \| \{ `items`: [`Cloudcast`](../interfaces/Cloudcast.md)[] ; `nextPageToken?`: `string` ; `params`: \{ `limit`: `number` ; `pageToken`: `undefined` \| `string`  } = sanitizedParams }\>
 
 #### Defined in
 
-[lib/api/PlaylistAPI.ts:36](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/api/PlaylistAPI.ts#L36)
+[lib/api/PlaylistAPI.ts:36](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/api/PlaylistAPI.ts#L36)

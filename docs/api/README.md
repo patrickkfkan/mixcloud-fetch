@@ -63,7 +63,7 @@ mixcloud-fetch
 
 #### Defined in
 
-[lib/entities/Misc.ts:8](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/Misc.ts#L8)
+[lib/entities/Misc.ts:8](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/Misc.ts#L8)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[lib/entities/Misc.ts:7](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/Misc.ts#L7)
+[lib/entities/Misc.ts:7](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/Misc.ts#L7)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[lib/entities/ItemList.ts:7](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/ItemList.ts#L7)
+[lib/entities/ItemList.ts:7](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/ItemList.ts#L7)
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 #### Defined in
 
-[lib/api/PlaylistAPI.ts:5](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/api/PlaylistAPI.ts#L5)
+[lib/api/PlaylistAPI.ts:5](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/api/PlaylistAPI.ts#L5)
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 #### Defined in
 
-[lib/api/SearchAPI.ts:9](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/api/SearchAPI.ts#L9)
+[lib/api/SearchAPI.ts:9](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/api/SearchAPI.ts#L9)
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[lib/api/SearchAPI.ts:26](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/api/SearchAPI.ts#L26)
+[lib/api/SearchAPI.ts:26](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/api/SearchAPI.ts#L26)
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 #### Defined in
 
-[lib/api/UserAPI.ts:19](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/api/UserAPI.ts#L19)
+[lib/api/UserAPI.ts:19](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/api/UserAPI.ts#L19)
 
 ## Variables
 
@@ -133,7 +133,7 @@ ___
 
 #### Defined in
 
-[lib/api/BaseAPI.ts:11](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/api/BaseAPI.ts#L11)
+[lib/api/BaseAPI.ts:11](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/api/BaseAPI.ts#L11)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-[lib/api/BaseAPI.ts:12](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/api/BaseAPI.ts#L12)
+[lib/api/BaseAPI.ts:12](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/api/BaseAPI.ts#L12)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[lib/api/BaseAPI.ts:10](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/api/BaseAPI.ts#L10)
+[lib/api/BaseAPI.ts:10](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/api/BaseAPI.ts#L10)
 
 ___
 
@@ -163,4 +163,4 @@ ___
 
 #### Defined in
 
-[index.ts:31](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/index.ts#L31)
+[index.ts:31](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/index.ts#L31)

@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[lib/entities/Misc.ts:17](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/Misc.ts#L17)
+[lib/entities/Misc.ts:17](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/Misc.ts#L17)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[lib/entities/Misc.ts:16](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/Misc.ts#L16)
+[lib/entities/Misc.ts:16](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/Misc.ts#L16)

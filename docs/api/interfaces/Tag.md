@@ -18,7 +18,7 @@
 
 #### Defined in
 
-[lib/entities/Tag.ts:3](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/Tag.ts#L3)
+[lib/entities/Tag.ts:3](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/Tag.ts#L3)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 #### Defined in
 
-[lib/entities/Tag.ts:4](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/Tag.ts#L4)
+[lib/entities/Tag.ts:4](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/Tag.ts#L4)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 #### Defined in
 
-[lib/entities/Tag.ts:2](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/Tag.ts#L2)
+[lib/entities/Tag.ts:2](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/Tag.ts#L2)

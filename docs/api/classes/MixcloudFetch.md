@@ -31,7 +31,7 @@
 
 #### Defined in
 
-[lib/MixcloudFetch.ts:24](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/MixcloudFetch.ts#L24)
+[lib/MixcloudFetch.ts:24](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/MixcloudFetch.ts#L24)
 
 ## Accessors
 
@@ -45,7 +45,7 @@
 
 #### Defined in
 
-[lib/MixcloudFetch.ts:63](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/MixcloudFetch.ts#L63)
+[lib/MixcloudFetch.ts:63](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/MixcloudFetch.ts#L63)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[lib/MixcloudFetch.ts:67](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/MixcloudFetch.ts#L67)
+[lib/MixcloudFetch.ts:67](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/MixcloudFetch.ts#L67)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[lib/MixcloudFetch.ts:59](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/MixcloudFetch.ts#L59)
+[lib/MixcloudFetch.ts:59](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/MixcloudFetch.ts#L59)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[lib/MixcloudFetch.ts:55](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/MixcloudFetch.ts#L55)
+[lib/MixcloudFetch.ts:55](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/MixcloudFetch.ts#L55)
 
 ## Methods
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[lib/MixcloudFetch.ts:35](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/MixcloudFetch.ts#L35)
+[lib/MixcloudFetch.ts:35](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/MixcloudFetch.ts#L35)
 
 ___
 
@@ -127,7 +127,7 @@ ___
 
 #### Defined in
 
-[lib/MixcloudFetch.ts:39](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/MixcloudFetch.ts#L39)
+[lib/MixcloudFetch.ts:39](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/MixcloudFetch.ts#L39)
 
 ___
 
@@ -147,7 +147,7 @@ ___
 
 #### Defined in
 
-[lib/MixcloudFetch.ts:43](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/MixcloudFetch.ts#L43)
+[lib/MixcloudFetch.ts:43](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/MixcloudFetch.ts#L43)
 
 ___
 
@@ -167,7 +167,7 @@ ___
 
 #### Defined in
 
-[lib/MixcloudFetch.ts:47](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/MixcloudFetch.ts#L47)
+[lib/MixcloudFetch.ts:47](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/MixcloudFetch.ts#L47)
 
 ___
 
@@ -187,4 +187,4 @@ ___
 
 #### Defined in
 
-[lib/MixcloudFetch.ts:51](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/MixcloudFetch.ts#L51)
+[lib/MixcloudFetch.ts:51](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/MixcloudFetch.ts#L51)

@@ -23,7 +23,7 @@
 
 #### Defined in
 
-[lib/entities/ItemList.ts:10](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/ItemList.ts#L10)
+[lib/entities/ItemList.ts:10](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/ItemList.ts#L10)
 
 ___
 
@@ -33,4 +33,4 @@ ___
 
 #### Defined in
 
-[lib/entities/ItemList.ts:11](https://github.com/patrickkfkan/mixcloud-fetch/blob/0699b4e/src/lib/entities/ItemList.ts#L11)
+[lib/entities/ItemList.ts:11](https://github.com/patrickkfkan/mixcloud-fetch/blob/f797afa/src/lib/entities/ItemList.ts#L11)
