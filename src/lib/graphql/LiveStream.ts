@@ -53,12 +53,13 @@ const LIVE_STREAM_CATEGORY_LIST_QUERY = `
 const LIVE_STREAM_LIST_QUERY = `
   query LiveStreamListQuery (
     $count: Int!
+    $cursor: String
     $orderBy: LiveStreamsOrderByEnum!
     $tag: String
   ) {
     viewer {
       live {
-        currentLiveStreams(first: $count, orderBy: $orderBy, tag: $tag) {
+        currentLiveStreams(first: $count, after: $cursor, orderBy: $orderBy, tag: $tag) {
           edges {
             node {
               id
