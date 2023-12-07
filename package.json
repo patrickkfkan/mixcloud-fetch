@@ -1,6 +1,6 @@
 {
   "name": "mixcloud-fetch",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Node module for fetching Mixcloud resources",
   "scripts": {
     "build": "npm run prepare",

@@ -691,6 +691,9 @@ mcfetch.cache.clear();
 
 # Changelog
 
+1.0.3
+- LiveStream API: fix `pageToken` ignored in `getCurrent()`
+
 1.0.2
 - Fix regression: `PlaylistAPI#getShows()` missing params
 
